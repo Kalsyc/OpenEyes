@@ -1,2 +1,2 @@
-# OpenEyes
+# SafeSpace
 CS4240 GroupProject

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1325168088898480}
+  m_IsPrefabParent: 1
+--- !u!1 &1325168088898480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4650864845715030}
+  - component: {fileID: 114045004546580782}
+  - component: {fileID: 114775574236593268}
+  - component: {fileID: 114771795169501344}
+  m_Layer: 0
+  m_Name: StaticMeshTools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4650864845715030
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325168088898480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114045004546580782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325168088898480}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2058734a7a3a5814cbc74eb66ad93091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReconsLoader: {fileID: 114775574236593268}
+  texturedMesh: {fileID: 0}
+  collisionMesh: {fileID: 0}
+  modelRenderers: []
+  SwitchModeScript: {fileID: 114771795169501344}
+  showMesh: 0
+  HintLocatorPrefab: {fileID: 1199606514533096, guid: 719e184c583a3fe418ba0c18d1ff0d0a,
+    type: 2}
+--- !u!114 &114771795169501344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325168088898480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc83a61584b181479741644e5c82d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VRMode_bg: {fileID: 0}
+  currentMode: 2
+  SkyboxMaterial: {fileID: 2100000, guid: 0c995dd2bdfb5d94e97fae08946f0e0d, type: 2}
+  setSkybox: 1
+--- !u!114 &114775574236593268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325168088898480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9479b24761f50a4f9c0d11cfd42376b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isColliderReady: 0
+  isMeshReady: 0
+  meshRnds: []
+  cldRnds: []
