@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - projectile
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -34,9 +36,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - VirtualWorldLayer
+  - DualCamera (Right)
+  - DualCamera (Left)
   m_SortingLayers:
   - name: Default
     uniqueID: 0
