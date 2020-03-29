@@ -117,6 +117,14 @@ public class ReticlePoser : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            Debug.Log("Test success");
+        }
+    }
+
     protected virtual void OnDisable()
     {
         reticleForDefaultRay.gameObject.SetActive(false);
