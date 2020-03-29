@@ -19,7 +19,7 @@ MonoBehaviour:
   m_bindingConfigFilePath: vive_role_bindings.cfg
   m_enableBindingInterfaceSwitch: 1
   m_bindingInterfaceSwitchKey: 98
-  m_bindingInterfaceSwitchKeyModifier: 303
+  m_bindingInterfaceSwitchKeyModifier: 32
   m_bindingInterfaceObjectSource: {fileID: 101448, guid: 26a034c83db7bcb4f99de4ddf57cbcfc,
     type: 3}
   m_activateGoogleVRModule: 1

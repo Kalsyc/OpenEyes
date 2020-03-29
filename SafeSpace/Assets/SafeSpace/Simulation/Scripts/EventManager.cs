@@ -11,8 +11,9 @@ public class EventManager : MonoBehaviour
     public static event TriggerAction OnCalendar;
     public static event TriggerAction OnSlides;
 
-    void OnTriggerEnter(Collider other) {
+    public void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Document")) {
+            Debug.Log("OnTriggerEnter triggered");
             if (OnDocument != null) {
                 OnDocument(other);
             }
