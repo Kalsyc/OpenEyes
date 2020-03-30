@@ -540,11 +540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1532531229867410, guid: 2b918cf92fa6ad648a852a0da59a1d41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1804569144245626, guid: 2b918cf92fa6ad648a852a0da59a1d41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4148135345915108, guid: 2b918cf92fa6ad648a852a0da59a1d41, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1767,7 +1767,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 164.37, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0.00007}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1277151856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1783,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0.00007}
+  _center: {x: 0, y: 0, z: 0}
   _size: {x: 164.37, y: 34.52, z: 0.007}
   _collider: {fileID: 1277151855}
   _rectTransform: {fileID: 1277151848}
@@ -2628,7 +2628,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 162.2, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0.00007}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2016088562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0.00007}
+  _center: {x: 0, y: 0, z: 0}
   _size: {x: 162.2, y: 34.52, z: 0.007}
   _collider: {fileID: 2016088561}
   _rectTransform: {fileID: 2016088557}
