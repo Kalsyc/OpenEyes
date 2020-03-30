@@ -17,6 +17,12 @@ public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
     //animation time for fade
     public float AnimationTime = 0.1f;
 
+    //select audio
+    public AudioSource selectAudio;
+
+    //click audio
+    public AudioSource clickAudio;
+
     //Controller to set for trigger
     [Serializable]
     public class ControllerSelector
@@ -40,6 +46,7 @@ public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
             Debug.Log("Gaze focused");
             _targetColor = HighlightColor;
             inFocus = true;
+            selectAudio.Play(0);
         }
         //If this object lost focus, fade the object's color to it's original color
         else
@@ -66,6 +73,7 @@ public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
         if (ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger) && inFocus)
         {
             Debug.Log("Trigger pressed with gaze");
+            clickAudio.Play(0);
             buttonReference.GetComponent<Button>().onClick.Invoke();
         }
     }
