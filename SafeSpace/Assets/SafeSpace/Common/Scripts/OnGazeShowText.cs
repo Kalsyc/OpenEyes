@@ -7,16 +7,28 @@ public class OnGazeShowText : MonoBehaviour, IGazeFocusable
 {
     public GameObject textToShow;
 
+    private bool isActive = false;
+
     //The method of the "IGazeFocusable" interface, which will be called when this object receives or loses focus
     public void GazeFocusChanged(bool hasFocus)
     {
-        //If this object received focus, fade the object's color to highlight color
         if (hasFocus)
         {
+            isActive = true;
             textToShow.SetActive(true);
         }
-        //If this object lost focus, fade the object's color to it's original color
+
         else
+        {
+            isActive = false;
+            StartCoroutine(WaitOffRoutine());
+        }
+    }
+
+    private IEnumerator WaitOffRoutine()
+    {
+        yield return new WaitForSeconds(10);
+        if (!isActive)
         {
             textToShow.SetActive(false);
         }

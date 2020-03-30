@@ -318,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -729,7 +729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.1, y: -0.75}
+  m_AnchoredPosition: {x: -1, y: -1}
   m_SizeDelta: {x: 167.1932, y: 37.0544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751928337
@@ -1767,7 +1767,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 164.37, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.00007}
 --- !u!114 &1277151856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1783,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0}
+  _center: {x: 0, y: 0, z: 0.00007}
   _size: {x: 164.37, y: 34.52, z: 0.007}
   _collider: {fileID: 1277151855}
   _rectTransform: {fileID: 1277151848}
@@ -2012,7 +2012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.1, y: -0.75}
+  m_AnchoredPosition: {x: 1, y: -1}
   m_SizeDelta: {x: 167.1932, y: 37.0544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1413775817
@@ -2379,7 +2379,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The simulations in this game is meant to emulate generalised anxiety in
+  m_text: The simulations in this game are meant to emulate generalised anxiety in
     Virtual Reality/Mixed Reality. Some people may experience discomfort, motion
     sickness, nausea or an induced anxiety attack while viewing such content. If
     you feel uncomfortable at any point in time, please remove your headset immediately.
@@ -2451,7 +2451,7 @@ MonoBehaviour:
   m_margin: {x: -1.558924, y: 0.000011437926, z: -0.000037437883, w: 0}
   m_textInfo:
     textComponent: {fileID: 1659909950}
-    characterCount: 310
+    characterCount: 311
     spriteCount: 0
     spaceCount: 45
     wordCount: 47
@@ -2628,7 +2628,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 162.2, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.00007}
 --- !u!114 &2016088562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0}
+  _center: {x: 0, y: 0, z: 0.00007}
   _size: {x: 162.2, y: 34.52, z: 0.007}
   _collider: {fileID: 2016088561}
   _rectTransform: {fileID: 2016088557}

@@ -24,7 +24,7 @@ namespace Tobii.XR.Examples
             {
                 _targetColor = HighlightColor;
                 Debug.Log("Vibrate!");
-                ViveInput.TriggerHapticPulse(HandRole.LeftHand, 500);
+                ViveInput.TriggerHapticVibration(HandRole.LeftHand, 5f, 85f, 1f, 0f);
             }
             //If this object lost focus, fade the object's color to it's original color
             else
