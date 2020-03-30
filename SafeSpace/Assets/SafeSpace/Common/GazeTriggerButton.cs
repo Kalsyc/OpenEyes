@@ -9,7 +9,7 @@ using HTC.UnityPlugin.Vive;
 public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
 {
     //Reference to button being invoked
-    public GameObject buttonReference;
+    public Button buttonReference;
 
     //default color
     public Color HighlightColor = Color.red;
@@ -46,7 +46,11 @@ public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
             Debug.Log("Gaze focused");
             _targetColor = HighlightColor;
             inFocus = true;
-            selectAudio.Play(0);
+            if (clickAudio != null)
+            {
+                selectAudio.Play(0);
+            }
+
         }
         //If this object lost focus, fade the object's color to it's original color
         else
@@ -73,8 +77,12 @@ public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
         if (ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger) && inFocus)
         {
             Debug.Log("Trigger pressed with gaze");
-            clickAudio.Play(0);
-            buttonReference.GetComponent<Button>().onClick.Invoke();
+            if (clickAudio != null)
+            {
+                clickAudio.Play(0);
+            }
+                
+            buttonReference.onClick.Invoke();
         }
     }
 }   
