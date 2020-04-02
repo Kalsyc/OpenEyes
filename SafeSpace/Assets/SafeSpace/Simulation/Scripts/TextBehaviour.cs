@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextBehaviourScript : MonoBehaviour
+public class TextBehaviour : MonoBehaviour
 {
     public string calendarText;
     public string slidesText;
@@ -28,15 +28,15 @@ public class TextBehaviourScript : MonoBehaviour
         EventManager.OnSlides -= triggerSlides;
     }
 
-    public void triggerCalendar(Collider other) {
+    public void triggerCalendar() {
         this.GetComponent<Text>().text = calendarText;
     }
 
-    public void triggerSlides(Collider other) {
+    public void triggerSlides() {
         this.GetComponent<Text>().text = slidesText;
     }
     
-    public void triggerDocument(Collider other) {
+    public void triggerDocument() {
         this.GetComponent<Text>().text = documentText;
     }    
 

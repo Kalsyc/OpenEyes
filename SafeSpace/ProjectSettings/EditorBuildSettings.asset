@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/SafeSpace/Menu/WarningScene.unity
     guid: 6044a25fc956f2d4690159b21ba0bd3d
   - enabled: 1
+    path: Assets/SafeSpace/Simulation/Simulation.unity
+    guid: 524d9c16a5e944a8fa822eb5bad15b0d
+  - enabled: 1
     path: Assets/SafeSpace/Menu/TestScene.unity
     guid: 7e403104b2e5dd04aae3d90428a55c76
   m_configObjects: {}

@@ -6,25 +6,26 @@ public class EventManager : MonoBehaviour
 {
     //using colliders to trigger
     // https://answers.unity.com/questions/652115/multiple-independent-event-and-one-delegate.html
-    public delegate void TriggerAction(Collider other);
+    public delegate void TriggerAction();
     public static event TriggerAction OnDocument;
     public static event TriggerAction OnCalendar;
     public static event TriggerAction OnSlides;
 
     public void OnTriggerEnter(Collider other) {
+        Debug.Log("OnTriggerEnter triggered");
         if (other.gameObject.CompareTag("Document")) {
-            Debug.Log("OnTriggerEnter triggered");
             if (OnDocument != null) {
-                OnDocument(other);
+                OnDocument();
             }
         } else if (other.gameObject.CompareTag("Calendar")) {
             if (OnCalendar != null) {
-                OnCalendar(other);
+                OnCalendar();
             }
         } else if (other.gameObject.CompareTag("Slides")) {
             if (OnSlides != null) {
-                OnSlides(other);
+                OnSlides();
             }
         }
     }
+
 }
