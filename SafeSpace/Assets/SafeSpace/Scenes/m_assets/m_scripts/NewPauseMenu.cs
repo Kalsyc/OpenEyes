@@ -2,24 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using HTC.UnityPlugin.Vive;
 
 public class NewPauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-
     public GameObject pauseMenuUI;
 
-    void Start ()
+    void Start()
     {
         pauseMenuUI.SetActive(false);
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if (ViveInput.GetPressDown(HandRole.RightHand, ControllerButton.Menu))
         {
-            Debug.Log("Key");
             if (GameIsPaused)
             {
                 Resume();
@@ -30,33 +28,47 @@ public class NewPauseMenu : MonoBehaviour
         }
     }
 
-    void Resume()
+    public void Resume ()
     {
+        Debug.Log("Resuming Game");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         GameIsPaused = false;
-        Debug.Log("Game Resumed");
-
     }
 
-    void Pause()
+    public void Restart()
     {
-        pauseMenuUI.SetActive(true);
-        // freeze game
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-        Debug.Log("Game Paused");
+        Debug.Log("Restarted Game");
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+        GameIsPaused = false;
     }
 
+
+    void Pause ()
+    {
+        Debug.Log("Game is Paused");
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
+        GameIsPaused = true;
+    }
+ 
     public void LoadMenu()
     {
+        // for the main menu. collaborate with arthur later. (Menu) from build settings
+        //SceneManagement.LoadScene("Menu");
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         Debug.Log("Loading Menu...");
-        //SceneManager.LoadScene("Menu");
     }
+
     public void QuitGame()
     {
-        Debug.Log("Quitting game...");
+        AudioListener.pause = false;
+        Debug.Log("Quitting Game...");
         Application.Quit();
     }
 

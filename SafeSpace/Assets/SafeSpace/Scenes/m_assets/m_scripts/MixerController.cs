@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MixerController : MonoBehaviour
 {
     public AudioMixer audioMixer;
+    public AudioClip[] songs;
 
 
     // reference to sliders to update them automatically
@@ -26,8 +27,8 @@ public class MixerController : MonoBehaviour
 
     private void Start()
     {
-        meditateSlider.value = PlayerPrefs.GetFloat("meditateVolume", 0);
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0);
+        meditateSlider.value = PlayerPrefs.GetFloat("meditateVolume", 0.5f);
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
     }
 
     private void onDisable()
