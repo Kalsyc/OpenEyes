@@ -22,6 +22,7 @@ namespace Tobii.XR.Examples
             //If this object received focus, fade the object's color to highlight color
             if (hasFocus)
             {
+                Debug.Log("Check");
                 _targetColor = HighlightColor;
             }
             //If this object lost focus, fade the object's color to it's original color
@@ -34,6 +35,7 @@ namespace Tobii.XR.Examples
         private void Start()
         {
             _graphic = GetComponent<Graphic>();
+            Debug.Log(_graphic);
             _originalColor = _graphic.color;
             _targetColor = _originalColor;
         }
