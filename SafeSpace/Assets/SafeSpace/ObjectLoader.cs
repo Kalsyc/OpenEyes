@@ -14,6 +14,7 @@ public class ObjectLoader : MonoBehaviour
     public void OnUnloadMenu(Scene current)
     {
         objectsToLoad.SetActive(true);
+        SceneManager.sceneUnloaded -= OnUnloadMenu;
     }
 
 }
