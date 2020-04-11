@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SafeSpace/Scenes/m_Screens.unity
-    guid: 4428507e0b2bb1948aa73703fb85e7e9
-  - enabled: 1
-    path: Assets/SafeSpace/Scenes/m_End_Scene.unity
-    guid: da7e35751744ad043921fc5972a48a45
-  - enabled: 1
-    path: Assets/SafeSpace/Scenes/m_Env_Grass.unity
-    guid: cb1a6b94df652c042a12ddcae57335c3
-  - enabled: 1
-    path: Assets/SafeSpace/Scenes/m_Env_Rocks.unity
-    guid: a7443c7a7deb2d54b8b011170e1c09ad
-  - enabled: 1
     path: Assets/SafeSpace/Menu/WarningScene.unity
     guid: 6044a25fc956f2d4690159b21ba0bd3d
   - enabled: 1
     path: Assets/SafeSpace/Menu/MenuScene.unity
     guid: 7e403104b2e5dd04aae3d90428a55c76
+  - enabled: 1
+    path: Assets/SafeSpace/Scenes/m_Screens.unity
+    guid: 4428507e0b2bb1948aa73703fb85e7e9
+  - enabled: 1
+    path: Assets/SafeSpace/Scenes/m_Env_Rocks.unity
+    guid: a7443c7a7deb2d54b8b011170e1c09ad
+  - enabled: 1
+    path: Assets/SafeSpace/Scenes/m_Env_Grass.unity
+    guid: cb1a6b94df652c042a12ddcae57335c3
+  - enabled: 1
+    path: Assets/SafeSpace/Scenes/m_End_Scene.unity
+    guid: da7e35751744ad043921fc5972a48a45
   m_configObjects: {}
