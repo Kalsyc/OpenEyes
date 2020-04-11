@@ -11,6 +11,7 @@ public class EnvironmentLoader : MonoBehaviour
 
     public GameObject unselectedWarning;
     public GameObject envPanel;
+    public GameObject nextPanel;
 
     public void LoadFlowerEnv()
     {
@@ -42,7 +43,7 @@ public class EnvironmentLoader : MonoBehaviour
         }
     }
 
-    public void CheckSelected()
+    public void LoadNextIfSelected()
     {
         if (currentLoadedEnvIndex == -1)
         {
@@ -51,6 +52,7 @@ public class EnvironmentLoader : MonoBehaviour
         }
 
         SetToInactive();
+        nextPanel.SetActive(true);
     }
 
     private void SetToInactive()

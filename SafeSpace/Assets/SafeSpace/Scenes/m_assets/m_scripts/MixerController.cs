@@ -23,6 +23,7 @@ public class MixerController : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
         audioMixer.SetFloat("sfxVolume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("sfxVolume", volume);
     }
 
     private void Start()

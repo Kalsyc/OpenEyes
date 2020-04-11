@@ -6,6 +6,8 @@ public class SFXAudio : MonoBehaviour
 {
     public AudioClip[] audioClips;
     private AudioSource selectedGameAudio;
+    private bool selected = false;
+    private int selectedAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +17,23 @@ public class SFXAudio : MonoBehaviour
 
     public void selectAudio (int id)
     {
-        Debug.Log("selected: " + id);
-        selectedGameAudio.clip = audioClips[id];
-        selectedGameAudio.Play();
-        selectedGameAudio.time = 100f;
-        Debug.Log("isPlaying: " + selectedGameAudio.isPlaying);
+        if (selected && id == selectedAudio)
+        {
+            Debug.Log("unselected: " + id);
+            selected = false;
+            selectedGameAudio.Stop();
+        }
+        else
+        {
+            selected = true;
+            selectedAudio = id;
+            Debug.Log("selected: " + id);
+            selectedGameAudio.clip = audioClips[id];
+            selectedGameAudio.Play();
+            selectedGameAudio.time = 100f;
+            Debug.Log("isPlaying: " + selectedGameAudio.isPlaying);
+            return;
+        }
     }
 
     // Update is called once per frame
