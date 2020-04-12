@@ -9,28 +9,46 @@ public class NewPauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject settingsPage;
+
+    private static bool inGame = false;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
     }
+
     void Update()
     {
-        if (ViveInput.GetPressDown(HandRole.RightHand, ControllerButton.Menu))
+        if (ViveInput.GetPressDown(HandRole.RightHand, ControllerButton.Menu) && inGame)
         {
             if (GameIsPaused)
             {
                 Resume();
-            } else
+            } 
+            else
             {
                 Pause();
             }
         }
     }
 
+    public static void ToggleInGame()
+    {
+        inGame = true;
+    }
+
+    public void ToggleSettings()
+    {
+        Debug.Log("Go to settings");
+        pauseMenuUI.SetActive(false);
+        settingsPage.SetActive(true);
+    }
+
     public void Resume ()
     {
         Debug.Log("Resuming Game");
+        settingsPage.SetActive(false);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         AudioListener.pause = false;
@@ -47,7 +65,7 @@ public class NewPauseMenu : MonoBehaviour
     }
 
 
-    void Pause ()
+    void Pause()
     {
         Debug.Log("Game is Paused");
         pauseMenuUI.SetActive(true);
@@ -59,10 +77,13 @@ public class NewPauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         // for the main menu. collaborate with arthur later. (Menu) from build settings
-        //SceneManagement.LoadScene("Menu");
         Time.timeScale = 1f;
         AudioListener.pause = false;
+        inGame = false;
+        SceneManager.LoadScene((int)SceneIndexes.MENU_SCREEN);
+        Destroy(GameObject.FindGameObjectWithTag("GameManager"));
         Debug.Log("Loading Menu...");
+        PlayerPrefs.SetInt("mode", -1);
     }
 
     public void QuitGame()

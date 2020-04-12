@@ -13,7 +13,16 @@ public class ObjectLoader : MonoBehaviour
     }
     public void OnUnloadMenu(Scene current)
     {
-        objectsToLoad.SetActive(true);
+        if (objectsToLoad != null)
+        {
+            objectsToLoad.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Objects to load cannot be found... searching...");
+            GameObject.FindGameObjectWithTag("ToLoad").SetActive(true);
+        }
+        
         SceneManager.sceneUnloaded -= OnUnloadMenu;
     }
 

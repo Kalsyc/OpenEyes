@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Vibrate
   - GameManager
+  - ToLoad
   layers:
   - Default
   - TransparentFX

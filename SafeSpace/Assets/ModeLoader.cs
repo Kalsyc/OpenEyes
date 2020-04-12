@@ -10,5 +10,6 @@ public class ModeLoader : MonoBehaviour
     public void UnloadCurrentScene()
     {
         SceneManager.UnloadSceneAsync(menuEnvIndex);
+
     }
 }

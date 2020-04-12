@@ -18,6 +18,7 @@ public class MixerController : MonoBehaviour
     public void SetMeditateVolume(float volume)
     {
         audioMixer.SetFloat("meditateVolume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("meditateVolume", volume);
     }
 
     public void SetSFXVolume(float volume)

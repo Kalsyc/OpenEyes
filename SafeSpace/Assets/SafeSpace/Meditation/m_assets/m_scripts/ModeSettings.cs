@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ModeSettings : MonoBehaviour
 {
+    public void Start()
+    {
+        PlayerPrefs.SetInt("mode", -1);
+    }
+
     public void UpdateMode(int id)
     {
         PlayerPrefs.SetInt("mode", id);
+        NewPauseMenu.ToggleInGame();
     }
 
     public int GetMode()
