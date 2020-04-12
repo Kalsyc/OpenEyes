@@ -7,6 +7,8 @@ TagManager:
   - projectile
   - FxTemporaire
   - Vibrate
+  - GameManager
+  - ToLoad
   layers:
   - Default
   - TransparentFX
