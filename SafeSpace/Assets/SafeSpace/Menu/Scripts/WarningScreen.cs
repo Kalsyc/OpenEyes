@@ -9,6 +9,7 @@ public class WarningScreen : MonoBehaviour
     {
         Debug.Log("Go to Menu");
         SceneManager.LoadScene((int)SceneIndexes.MENU_SCREEN);
+        PlayerPrefs.SetInt("next", (int)SceneIndexes.MENU_SCREEN);
     }
 
     public void QuitApplication()

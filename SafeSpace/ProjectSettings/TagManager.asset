@@ -9,6 +9,7 @@ TagManager:
   - Vibrate
   - GameManager
   - ToLoad
+  - NextLevelPointer
   layers:
   - Default
   - TransparentFX

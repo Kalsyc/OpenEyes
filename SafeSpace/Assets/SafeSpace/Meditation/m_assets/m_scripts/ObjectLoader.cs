@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ObjectLoader : MonoBehaviour
 {
     public GameObject objectsToLoad;
+    public GameObject toInstantiate;
 
     public void Start()
     {
@@ -21,8 +22,9 @@ public class ObjectLoader : MonoBehaviour
         {
             Debug.Log("Objects to load cannot be found... searching...");
             GameObject.FindGameObjectWithTag("ToLoad").SetActive(true);
+            
         }
-        
+        toInstantiate.SetActive(true);
         SceneManager.sceneUnloaded -= OnUnloadMenu;
     }
 
