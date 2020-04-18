@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
     public static event TriggerAction OnCalendar;
     public static event TriggerAction OnSlides;
     public static event TriggerAction OnSlideEnd;
+    public static event TriggerAction OnBoot;
     public int slideCount;
 
     private void Start() {
@@ -30,6 +31,15 @@ public class EventManager : MonoBehaviour
         } 
     }
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void OnBeforeSceneLoadRuntimeMethod()
+    {
+        if (OnBoot != null) {
+            OnBoot();
+            Debug.Log("Onboot triggered.");
+        }
+    }
+
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -45,6 +55,10 @@ public class EventManager : MonoBehaviour
         } else if (Input.GetKeyDown("space")) {
             OnDocument();
             Debug.Log("space bar pressed");
+        } else if (Input.GetKeyDown(KeyCode.P)) {
+            if (OnCalendar != null) {
+                OnCalendar();
+            }
         }
         
     }

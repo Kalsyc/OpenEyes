@@ -58,11 +58,5 @@ public class JumbleTextBehaviour : MonoBehaviour
         }
         return new string(array);
     }
-    // private void FixedUpdate() {
-    //     if (Input.GetKeyDown("space")) {
-    //         fadeOut();
-    //         Debug.Log("space bar pressed");
-    //     }    
-    // }
 
 }
