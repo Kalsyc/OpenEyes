@@ -10,6 +10,12 @@ public class EventManager : MonoBehaviour
     public static event TriggerAction OnDocument;
     public static event TriggerAction OnCalendar;
     public static event TriggerAction OnSlides;
+    public static event TriggerAction OnSlideEnd;
+    public int slideCount;
+
+    private void Start() {
+        slideCount = 0;    
+    }
 
     public void OnTriggerEnter(Collider other) {
         Debug.Log("OnTriggerEnter triggered");
@@ -29,10 +35,18 @@ public class EventManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             if (OnSlides != null) {
+                slideCount += 1;
                 OnSlides();
+                if (slideCount == 3) {
+                    OnSlideEnd();
+                }
             }
             print("S key was pressed");
+        } else if (Input.GetKeyDown("space")) {
+            OnDocument();
+            Debug.Log("space bar pressed");
         }
+        
     }
 
 }

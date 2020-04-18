@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class HeartRateBehaviour : MonoBehaviour
 {
-    public int heartRateLevel;
     public AudioSource level1;
     public AudioSource level2;
     public AudioSource level3;
@@ -13,7 +12,7 @@ public class HeartRateBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        heartRateLevel = 0;
+        PlayHeartRateLvl1();
     }
 
      void OnEnable()

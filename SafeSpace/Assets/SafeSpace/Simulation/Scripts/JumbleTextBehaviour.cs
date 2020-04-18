@@ -13,15 +13,15 @@ public class JumbleTextBehaviour : MonoBehaviour
     private Text t;
     // Start is called before the first frame update
 
-    void OnEnable()
-    {
-        EventManager.OnDocument += fadeOut;
-    }
+    // void OnEnable()
+    // {
+    //     EventManager.OnDocument += fadeOut;
+    // }
 
-    void OnDisable()
-    {
-        EventManager.OnDocument -= fadeOut;
-    }
+    // void OnDisable()
+    // {
+    //     EventManager.OnDocument -= fadeOut;
+    // }
     void Start()
     {
         textToJumble = this.GetComponent<Text>().text;
@@ -58,11 +58,11 @@ public class JumbleTextBehaviour : MonoBehaviour
         }
         return new string(array);
     }
-    private void FixedUpdate() {
-        if (Input.GetKeyDown("space")) {
-            fadeOut();
-            Debug.Log("space bar pressed");
-        }    
-    }
+    // private void FixedUpdate() {
+    //     if (Input.GetKeyDown("space")) {
+    //         fadeOut();
+    //         Debug.Log("space bar pressed");
+    //     }    
+    // }
 
 }

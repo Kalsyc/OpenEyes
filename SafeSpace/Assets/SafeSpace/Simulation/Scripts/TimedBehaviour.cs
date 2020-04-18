@@ -16,6 +16,8 @@ public class TimedBehaviour : MonoBehaviour
             EventManager.OnSlides += Orchestrate;
         } else if (eventType == "Calendar") {
             EventManager.OnCalendar += Orchestrate;
+        } else if (eventType == "SlideEnd") {
+            EventManager.OnSlideEnd += Orchestrate;
         }
     }
 
