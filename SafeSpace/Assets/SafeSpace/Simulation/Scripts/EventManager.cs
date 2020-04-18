@@ -21,10 +21,17 @@ public class EventManager : MonoBehaviour
             if (OnCalendar != null) {
                 OnCalendar();
             }
-        } else if (other.gameObject.CompareTag("Slides")) {
+        } 
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
             if (OnSlides != null) {
                 OnSlides();
             }
+            print("S key was pressed");
         }
     }
 
