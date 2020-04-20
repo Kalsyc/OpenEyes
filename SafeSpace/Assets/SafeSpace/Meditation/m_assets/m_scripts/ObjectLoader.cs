@@ -7,12 +7,26 @@ public class ObjectLoader : MonoBehaviour
 {
     public GameObject objectsToLoad;
     public GameObject toInstantiate;
+    private bool noObjectsFound = false;
 
     public void Start()
     {
         SceneManager.sceneUnloaded += OnUnloadMenu;
     }
-    public void OnUnloadMenu(Scene current)
+
+    public void Update()
+    {
+        if (noObjectsFound)
+        {
+            objectsToLoad = GameObject.FindGameObjectWithTag("ToLoad");
+            if (objectsToLoad != null)
+            {
+                objectsToLoad.SetActive(true);
+                noObjectsFound = false;
+            }
+        }
+    }
+    public void OnUnloadMenu(Scene scene)
     {
         if (objectsToLoad != null)
         {
@@ -21,8 +35,15 @@ public class ObjectLoader : MonoBehaviour
         else
         {
             Debug.Log("Objects to load cannot be found... searching...");
-            GameObject.FindGameObjectWithTag("ToLoad").SetActive(true);
-            
+            objectsToLoad = GameObject.FindGameObjectWithTag("ToLoad");
+            if (objectsToLoad != null)
+            {
+                objectsToLoad.SetActive(true);
+            }
+            else
+            {
+                noObjectsFound = true;
+            }
         }
         toInstantiate.SetActive(true);
         SceneManager.sceneUnloaded -= OnUnloadMenu;

@@ -50,7 +50,7 @@ public class NewPauseMenu : MonoBehaviour
         Debug.Log("Resuming Game");
         settingsPage.SetActive(false);
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         AudioListener.pause = false;
         GameIsPaused = false;
     }
@@ -59,7 +59,7 @@ public class NewPauseMenu : MonoBehaviour
     {
         Debug.Log("Restarted Game");
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         AudioListener.pause = false;
         GameIsPaused = false;
     }
@@ -69,7 +69,7 @@ public class NewPauseMenu : MonoBehaviour
     {
         Debug.Log("Game is Paused");
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         AudioListener.pause = true;
         GameIsPaused = true;
     }
@@ -77,7 +77,7 @@ public class NewPauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         // for the main menu. collaborate with arthur later. (Menu) from build settings
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         AudioListener.pause = false;
         inGame = false;
         SceneManager.LoadScene((int)SceneIndexes.MENU_SCREEN);

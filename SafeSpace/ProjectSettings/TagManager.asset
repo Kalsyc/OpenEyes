@@ -10,6 +10,8 @@ TagManager:
   - GameManager
   - ToLoad
   - NextLevelPointer
+  - OnEnable
+  - Meditation
   layers:
   - Default
   - TransparentFX

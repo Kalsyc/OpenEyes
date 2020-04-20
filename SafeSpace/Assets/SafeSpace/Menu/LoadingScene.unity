@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -920,8 +920,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 843793313}
-  HighlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
+  textObject: {fileID: 0}
   selectAudio: {fileID: 843793317}
   clickAudio: {fileID: 843793316}
   controllerToSet:
@@ -941,8 +943,8 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0.0001}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0.000009999996}
-  _size: {x: 800, y: 300, z: 0.0015}
+  _center: {x: 0, y: 0, z: -0.00002}
+  _size: {x: 800, y: 300, z: 0.003}
   _collider: {fileID: 843793321}
   _rectTransform: {fileID: 843793312}
   _graphic: {fileID: 843793314}
@@ -970,8 +972,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 800, y: 300, z: 0.0015}
-  m_Center: {x: 0, y: 0, z: 0.000009999996}
+  m_Size: {x: 800, y: 300, z: 0.003}
+  m_Center: {x: 0, y: 0, z: -0.00002}
 --- !u!1001 &1023601243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1131,7 +1133,7 @@ RectTransform:
   m_GameObject: {fileID: 1194777942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 843793312}
   m_Father: {fileID: 2103094282}
