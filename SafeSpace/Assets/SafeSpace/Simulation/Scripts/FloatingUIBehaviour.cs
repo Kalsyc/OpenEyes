@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using DentedPixel;
 
-public class OnScreenTextBehaviour : MonoBehaviour
+public class FloatingUIBehaviour : MonoBehaviour
 {
-    private RectTransform panelRect;
+   private RectTransform panelRect;
     private Text onScreentext;
     // Start is called before the first frame update
     void Start()
@@ -19,14 +19,16 @@ public class OnScreenTextBehaviour : MonoBehaviour
     public void ShowText(string text) {
         FadeIn();
         onScreentext.text = text;
-        Invoke("FadeOut", 5.0f);
     }
 
     public void FadeIn() {
-        LeanTween.alpha(panelRect, 1f, 2f).setEase(LeanTweenType.linear);
+        LeanTween.alpha(panelRect, 1f, 1f).setEase(LeanTweenType.linear);
+    }
+    public void FadeOut() {
+        LeanTween.alpha(panelRect, 0f, 1.5f).setEase(LeanTweenType.linear);
     }
 
-    public void FadeOut() {
-        LeanTween.alpha(panelRect, 0f, 1f).setEase(LeanTweenType.linear);
-    }
+    // public void MoveUp() { // not working
+    //     LeanTween.moveY(gameObject, 0.0001f, 2.0f).setEase(LeanTweenType.easeOutQuad);
+    // }
 }
