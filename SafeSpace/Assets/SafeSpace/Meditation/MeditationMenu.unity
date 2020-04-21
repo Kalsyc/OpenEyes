@@ -8968,7 +8968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &911182576
 MonoBehaviour:
@@ -9049,7 +9049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964234195
 GameObject:
@@ -11751,7 +11751,7 @@ RectTransform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11912,7 +11912,7 @@ PrefabInstance:
     - target: {fileID: 3817290564216591909, guid: 90e4044a71266b248bd355ca2483dd48,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3817290564216591909, guid: 90e4044a71266b248bd355ca2483dd48,
         type: 3}
@@ -14839,7 +14839,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Guided Meditation
+  m_Text: Meditation Voiceover
 --- !u!222 &1736730952
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15665,17 +15665,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: 96f41ab7830de6942954194861befa0c, type: 3}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19362,7 +19351,7 @@ Transform:
   - {fileID: 990147690}
   - {fileID: 4147855779173032777}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2099650370
 MonoBehaviour:
@@ -20781,7 +20770,7 @@ PrefabInstance:
     - target: {fileID: 3700546232279861266, guid: 55b4fe4860c4e734f84cfc3a76450d61,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3700546232279861266, guid: 55b4fe4860c4e734f84cfc3a76450d61,
         type: 3}
@@ -20802,6 +20791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeditationAnim
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700546232279861484, guid: 55b4fe4860c4e734f84cfc3a76450d61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3700546232890748570, guid: 55b4fe4860c4e734f84cfc3a76450d61,
         type: 3}

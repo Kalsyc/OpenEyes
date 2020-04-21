@@ -19,6 +19,8 @@ public class GuidedBreathing : MonoBehaviour
     public GameObject glowingCircle;
     public GameObject breathingCircle;
 
+    private bool isPlaying = false;
+
     private TMP_Text text;
     private Dictionary<int, Action> holder = new Dictionary<int, Action>();
 
@@ -31,11 +33,18 @@ public class GuidedBreathing : MonoBehaviour
     }
     public void PlayScript()
     {
+        if (isPlaying)
+        {
+            StopAllCoroutines();
+            glowingCircle.SetActive(false);
+            breathingCircle.SetActive(false);
+        }
         StartCoroutine(PlayStep(stringShown));
     }
 
     IEnumerator PlayStep(string[] msg)
     {
+        isPlaying = true;
         for (int i = 0; i < msg.Length; i++)
         {
             text.text = msg[i];
@@ -46,6 +55,7 @@ public class GuidedBreathing : MonoBehaviour
             }
             yield return new WaitForSeconds(stringDuration[i]);
         }
+        isPlaying = false;
     }
 
     public void PlayBreathingCircle()
