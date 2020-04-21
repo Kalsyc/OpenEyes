@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SafeSpace/Menu/LoadingScene.unity
     guid: a2b7c504b244f3041962400effa64cad
+  - enabled: 1
+    path: Assets/SafeSpace/Simulation/SimulationBeforePresentation.unity
+    guid: 98af293a6b4cd460993a52ed2d1c2d39
+  - enabled: 1
+    path: Assets/SafeSpace/Simulation/Simulation.unity
+    guid: 524d9c16a5e944a8fa822eb5bad15b0d
   m_configObjects: {}

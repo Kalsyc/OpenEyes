@@ -5,6 +5,7 @@ using UnityEngine;
 using HTC.UnityPlugin.Vive;
 using UnityEngine.UI;
 using Tobii.G2OM;
+using UnityEngine.Events;
 
 public class CustomGrab : MonoBehaviour, IGazeFocusable
 {
@@ -14,6 +15,8 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     public AudioSource clickAudio;
     public Material outlineMaterial;
     public float AnimationTime = 0.1f;
+    public List<UnityEvent> eventList;
+    public float grabDuration;
 
     private Transform objectTransform;
     private Transform controllerTransform;
@@ -21,9 +24,11 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     private bool isPlaying = false;
     private Vector3 originalPosition;
     private MeshRenderer meshRenderer;
-    private Material originalMaterial;
-    private Material[] normalMat = new Material[1];
-    private Material[] highlightedMat = new Material[2];
+    private Material[] originalMaterial;
+    private int numOfMaterial;
+    private Material[] highlightedMat;
+    private int numOfEvents;
+    private bool[] boolPlay;
 
     //Controller to set for trigger
     [Serializable]
@@ -35,11 +40,12 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     private void Start()
     {
         meshRenderer = objectReference.GetComponent<MeshRenderer>();
-        originalMaterial = meshRenderer.materials[0];
-        normalMat[0] = originalMaterial;
-        highlightedMat[0] = originalMaterial;
-        highlightedMat[1] = outlineMaterial;
-        meshRenderer.materials = normalMat;
+        originalMaterial = meshRenderer.materials;
+        numOfMaterial = originalMaterial.Length;
+        highlightedMat = new Material[numOfMaterial + 1];
+        originalMaterial.CopyTo(highlightedMat, 0);
+        highlightedMat[numOfMaterial] = outlineMaterial;
+        meshRenderer.materials = originalMaterial;
         objectTransform = objectReference.GetComponent<Transform>();
         controllerTransform = controllerReference.GetComponent<Transform>();
         originalPosition = objectReference.GetComponent<Transform>().position;
@@ -59,7 +65,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         else
         {
             inFocus = false;
-            meshRenderer.materials = normalMat;
+            meshRenderer.materials = originalMaterial;
         }
     }
     private void Update()
@@ -75,8 +81,11 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         isPlaying = true;
         clickAudio.Play(0);
         objectTransform.position = controllerTransform.position;
-        //Do something
-        yield return new WaitForSeconds(5f);
+        foreach (UnityEvent eventInstance in eventList)
+        {
+            eventInstance.Invoke();
+        }
+        yield return new WaitForSeconds(grabDuration);
         objectTransform.position = originalPosition;
         isPlaying = false;
         StartCoroutine(Pickup());
