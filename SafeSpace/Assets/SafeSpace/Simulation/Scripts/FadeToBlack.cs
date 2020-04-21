@@ -10,7 +10,12 @@ public class FadeToBlack : MonoBehaviour
 
     public void FadeToNextLevel() 
     {
-        FadeTo((int)SceneIndexes.SIMULATION_TWO_SCREEN); 
+        FadeTo((int)SceneIndexes.SIMULATION_TWO_SCREEN);
+    }
+
+    public void FadeToMeditation()
+    {
+        FadeTo((int)SceneIndexes.MEDITATION_MENU);
     }
 
     public void FadeTo(int levelIndex) 

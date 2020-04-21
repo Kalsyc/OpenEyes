@@ -19,14 +19,19 @@ public class EventMaster : MonoBehaviour
     {
         OnCalendar();
     }
-    void Start()
+
+    public void InvokeOnSlides()
     {
-        
+        OnSlides();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InvokeOnSlideEnd()
     {
-        
+        OnSlideEnd();
+    }    
+
+    public void InvokeOnDocument()
+    {
+        OnDocument();
     }
 }

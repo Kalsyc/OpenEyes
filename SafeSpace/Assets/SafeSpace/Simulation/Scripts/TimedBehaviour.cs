@@ -11,15 +11,15 @@ public class TimedBehaviour : MonoBehaviour
 
     private void OnEnable() {
         if (eventType == "Document") {
-            EventManager.OnDocument += Orchestrate;
+            EventMaster.OnDocument += Orchestrate;
         } else if (eventType == "Slides") {
-            EventManager.OnSlides += Orchestrate;
+            EventMaster.OnSlides += Orchestrate;
         } else if (eventType == "Calendar") {
             EventMaster.OnCalendar += Orchestrate;
         } else if (eventType == "SlideEnd") {
-            EventManager.OnSlideEnd += Orchestrate;
+            EventMaster.OnSlideEnd += Orchestrate;
         } else if (eventType == "Boot") {
-            EventManager.OnBoot += Orchestrate;
+            EventMaster.OnBoot += Orchestrate;
         }
     }
 

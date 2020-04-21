@@ -2,30 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class SlidesTextBehaviour : MonoBehaviour
 {
-    public string[] slide1 = new string[2];
-    public string[] slide2 = new string[2];
-    public string[] slide3 = new string[2];
-    GameObject slideTitle;
-    GameObject slideBody;
-    GameObject slideBackground;
-    public int currentSlide;
+    public string[] title;
+    public string[] body;
+    public GameObject slideTitleObject;
+    public GameObject slideBodyObject;
+    public GameObject slideBackgroundObject;
+    public GameObject reference;
+    public UnityEvent endingEvent;
+
+    private Text slideTitle;
+    private Text slideBody;
+
+    private int currentSlide = 0;
+    private int numOfSlides;
     // Start is called before the first frame update
     void Start()
     {
-        slideTitle = GameObject.Find("Title");
-        slideBody = GameObject.Find("SlidesBody");
-        slideBackground = GameObject.Find("Background");
-        currentSlide = 0;
-        getSlide();
+        slideTitle = slideTitleObject.GetComponent<Text>();
+        slideBody = slideBodyObject.GetComponent<Text>();
+        numOfSlides = Mathf.Min(title.Length, body.Length);
+    }
+
+    public void changeSlide()
+    {
+        if (currentSlide == numOfSlides)
+        {
+            reference.SetActive(false);
+            endingEvent.Invoke();
+            return;
+        }
+        Debug.Log("ChangeSlide");
+        slideTitle.text = title[currentSlide];
+        slideBody.text = body[currentSlide];
+        currentSlide++;
     }
 
     void OnEnable()
     {
-        EventManager.OnSlides += incrementSlide;
+        EventMaster.OnSlides += changeSlide;
     }
+
+    /*
 
     public void changeToSlide1() {
         currentSlide = 1;
@@ -72,4 +93,5 @@ public class SlidesTextBehaviour : MonoBehaviour
             changeToSlide3();
         }
     }
+    */
 }
