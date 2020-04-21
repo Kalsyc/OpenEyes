@@ -27,7 +27,7 @@ public class MixerController : MonoBehaviour
         PlayerPrefs.SetFloat("sfxVolume", volume);
     }
 
-    private void Start()
+    private void Awake()
     {
         meditateSlider.value = PlayerPrefs.GetFloat("meditateVolume", 0.5f);
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);

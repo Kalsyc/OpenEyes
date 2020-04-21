@@ -9,6 +9,7 @@ public class MusicLoader : MonoBehaviour
     public GameObject selectMessage;
     public GameObject musicPanel;
     public GameObject nextPanel;
+    public GameObject sliderObject;
 
     public string[] trackNames;
 
@@ -18,9 +19,11 @@ public class MusicLoader : MonoBehaviour
     private bool selected = false;
     private int selectedMusic;
     private Text messageShown;
+    private Slider slider;
 
     public void Start()
     {
+        slider = sliderObject.GetComponent<Slider>();
         messageShown = selectMessage.GetComponent<Text>();
         messageShown.text = messageNoneSelected;
     }
@@ -44,5 +47,17 @@ public class MusicLoader : MonoBehaviour
             selected = true;
             messageShown.text = messageBeginning + trackNames[id];
         }
+    }
+
+    public void LowerVolume()
+    {
+        float currentValue = slider.value;
+        slider.value = Mathf.Max(0f, slider.value - 0.1f);
+    }
+
+    public void IncreaseVolume()
+    {
+        float currentValue = slider.value;
+        slider.value = Mathf.Min(1f, slider.value + 0.1f);
     }
 }

@@ -9,6 +9,8 @@ public class ModeLoader : MonoBehaviour
 
     public void UnloadCurrentScene()
     {
+        GameObject.FindGameObjectWithTag("OnEnable").transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.FindGameObjectWithTag("OnEnable").transform.GetChild(0).gameObject.GetComponent<ObjectLoader>().enabled = true;
         SceneManager.UnloadSceneAsync(menuEnvIndex);
 
     }
