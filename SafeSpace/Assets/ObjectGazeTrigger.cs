@@ -18,6 +18,7 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
     public float concurrentDelay;
     public GameObject cursor;
     public bool toRepeat = false;
+    public bool isHighlightable;
 
     private bool inFocus = false;
     private bool isPlaying = false;
@@ -35,12 +36,16 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
 
     private void Start()
     {
-        meshRenderer = objectReference.GetComponent<MeshRenderer>();
-        originalMaterial = meshRenderer.materials;
-        numOfMaterial = originalMaterial.Length;
-        highlightedMat = new Material[numOfMaterial + 1];
-        originalMaterial.CopyTo(highlightedMat, 0);
-        highlightedMat[numOfMaterial] = outlineMaterial;
+        if (isHighlightable)
+        {
+            meshRenderer = objectReference.GetComponent<MeshRenderer>();
+            originalMaterial = meshRenderer.materials;
+            numOfMaterial = originalMaterial.Length;
+            highlightedMat = new Material[numOfMaterial + 1];
+            originalMaterial.CopyTo(highlightedMat, 0);
+            highlightedMat[numOfMaterial] = outlineMaterial;
+        }
+
         StartCoroutine(Pickup());
 
     }
@@ -53,13 +58,21 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
         {
             cursor.SetActive(true);
             inFocus = true;
-            meshRenderer.materials = highlightedMat;
+            if (isHighlightable)
+            {
+                meshRenderer.materials = highlightedMat;
+            }
+
         }
         else
         {
             cursor.SetActive(false);
             inFocus = false;
-            meshRenderer.materials = originalMaterial;
+            if (isHighlightable)
+            {
+                meshRenderer.materials = originalMaterial;
+            }
+
         }
     }
     private void Update()

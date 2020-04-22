@@ -7,6 +7,7 @@ public class SceneBooter : MonoBehaviour
 {
     // Start is called before the first frame update
     public UnityEvent bootEvent;
+    public GameObject toInstantiate;
     void Start()
     {
         bootEvent.Invoke();

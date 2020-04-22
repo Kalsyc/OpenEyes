@@ -18,6 +18,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     public List<UnityEvent> eventList;
     public float grabDuration;
     public GameObject cursor;
+    public bool isHighlightable;
 
     private Transform objectTransform;
     private Transform controllerTransform;
@@ -40,16 +41,20 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
 
     private void Start()
     {
-        meshRenderer = objectReference.GetComponent<MeshRenderer>();
-        originalMaterial = meshRenderer.materials;
-        numOfMaterial = originalMaterial.Length;
-        highlightedMat = new Material[numOfMaterial + 1];
-        originalMaterial.CopyTo(highlightedMat, 0);
-        highlightedMat[numOfMaterial] = outlineMaterial;
-        meshRenderer.materials = originalMaterial;
+        if (isHighlightable)
+        {
+            meshRenderer = objectReference.GetComponent<MeshRenderer>();
+            originalMaterial = meshRenderer.materials;
+            numOfMaterial = originalMaterial.Length;
+            highlightedMat = new Material[numOfMaterial + 1];
+            originalMaterial.CopyTo(highlightedMat, 0);
+            highlightedMat[numOfMaterial] = outlineMaterial;
+            meshRenderer.materials = originalMaterial;
+        }
         objectTransform = objectReference.GetComponent<Transform>();
         controllerTransform = controllerReference.GetComponent<Transform>();
         originalPosition = objectReference.GetComponent<Transform>().position;
+
         StartCoroutine(Pickup());
 
     }
@@ -62,13 +67,21 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         {
             cursor.SetActive(true);
             inFocus = true;
-            meshRenderer.materials = highlightedMat;
+            if (isHighlightable)
+            {
+                meshRenderer.materials = highlightedMat;
+            }
+
         }
         else
         {
             cursor.SetActive(false);
             inFocus = false;
-            meshRenderer.materials = originalMaterial;
+            if (isHighlightable)
+            {
+                meshRenderer.materials = originalMaterial;
+            }
+
         }
     }
     private void Update()
