@@ -17,6 +17,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     public float AnimationTime = 0.1f;
     public List<UnityEvent> eventList;
     public float grabDuration;
+    public GameObject cursor;
 
     private Transform objectTransform;
     private Transform controllerTransform;
@@ -57,13 +58,15 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
 
     public void GazeFocusChanged(bool hasFocus)
     {
-        if (hasFocus)
+        if (hasFocus && !isPlaying)
         {
+            cursor.SetActive(true);
             inFocus = true;
             meshRenderer.materials = highlightedMat;
         }
         else
         {
+            cursor.SetActive(false);
             inFocus = false;
             meshRenderer.materials = originalMaterial;
         }
@@ -78,6 +81,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         {
             yield return null;
         }
+        cursor.SetActive(false);
         isPlaying = true;
         clickAudio.Play(0);
         objectTransform.position = controllerTransform.position;

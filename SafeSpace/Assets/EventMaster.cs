@@ -11,10 +11,14 @@ public class EventMaster : MonoBehaviour
     public static event TriggerAction OnSlides;
     public static event TriggerAction OnSlideEnd;
     public static event TriggerAction OnBoot;
-    
 
     // Start is called before the first frame update
-    
+
+    public void InvokeOnBoot()
+    {
+        OnBoot();
+    }
+
     public void InvokeOnCalendar()
     {
         OnCalendar();
