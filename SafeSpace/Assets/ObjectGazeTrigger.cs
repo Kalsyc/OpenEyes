@@ -16,6 +16,8 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
     public List<UnityEvent> eventList;
     public float eventDelay;
     public float concurrentDelay;
+    public GameObject cursor;
+    public bool toRepeat = false;
 
     private bool inFocus = false;
     private bool isPlaying = false;
@@ -47,13 +49,15 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
 
     public void GazeFocusChanged(bool hasFocus)
     {
-        if (hasFocus)
+        if (hasFocus && !isPlaying)
         {
+            cursor.SetActive(true);
             inFocus = true;
             meshRenderer.materials = highlightedMat;
         }
         else
         {
+            cursor.SetActive(false);
             inFocus = false;
             meshRenderer.materials = originalMaterial;
         }
@@ -64,10 +68,12 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
 
     IEnumerator Pickup()
     {
-        while (!inFocus || !ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger))
+        while (!(inFocus && !isPlaying && ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger)))
         {
             yield return null;
         }
+        isPlaying = true;
+        cursor.SetActive(false);
         clickAudio.Play(0);
         foreach (UnityEvent eventInstance in eventList)
         {
@@ -75,7 +81,12 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
             yield return new WaitForSeconds(eventDelay);
         }
         yield return new WaitForSeconds(concurrentDelay);
-        StartCoroutine(Pickup());
+        if (toRepeat)
+        {
+            isPlaying = false;
+            StartCoroutine(Pickup());
+        }
+
     }
 
 

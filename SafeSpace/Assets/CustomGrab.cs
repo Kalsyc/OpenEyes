@@ -77,7 +77,8 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
 
     IEnumerator Pickup()
     {
-        while ((!inFocus || !ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger)) && !isPlaying)
+        while (!(inFocus && !isPlaying && ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger)))
+        //while ((!inFocus || !ViveInput.GetPressDown(controllerToSet.controller, ControllerButton.Trigger)) && !isPlaying)
         {
             yield return null;
         }
