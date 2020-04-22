@@ -10,9 +10,16 @@ public class HeartRateBehaviour : MonoBehaviour
     public AudioSource level3;
     public AudioSource level4;
     // Start is called before the first frame update
+    public UnityEvent startEvent;
     void Start()
     {
         PlayHeartRateLvl1();
+        StartCoroutine(Delay());
+        startEvent.Invoke();
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5f);
     }
 
      void OnEnable()
@@ -21,6 +28,7 @@ public class HeartRateBehaviour : MonoBehaviour
         level2.Stop();
         level3.Stop();
         level4.Stop();
+        startEvent.Invoke();
     }
 
     public void PlayHeartRateLvl1() {

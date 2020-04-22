@@ -9,7 +9,7 @@ public class EnableLoader : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Finding...");
+        //Debug.Log("Finding...");
         if (foundObject)
         {
             return;
