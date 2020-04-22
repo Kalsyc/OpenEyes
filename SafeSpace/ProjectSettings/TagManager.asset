@@ -6,6 +6,9 @@ TagManager:
   tags:
   - projectile
   - FxTemporaire
+  - Document
+  - Slides
+  - Calendar
   - Vibrate
   - GameManager
   - ToLoad

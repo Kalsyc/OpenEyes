@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:SafeSpace/Assets/Materials.meta
 guid: a629377a96ff946da92d739dcdfeb5a6
+=======
+guid: 2e52b68322f301d44970836ef5f87902
+>>>>>>> f9ad5203b504d1540c04578a11aaff8a28c8958e:SafeSpace/Assets/Clipboard/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
