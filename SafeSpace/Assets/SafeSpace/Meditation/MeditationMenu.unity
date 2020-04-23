@@ -473,7 +473,7 @@ RectTransform:
   m_GameObject: {fileID: 17584480}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_Children:
   - {fileID: 41347526}
   m_Father: {fileID: 722135239}
@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -251}
+  m_AnchoredPosition: {x: 0, y: -194}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &17584482
@@ -687,8 +687,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 160, y: 30, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0001}
+  m_Size: {x: 160, y: 30, z: 0.02}
+  m_Center: {x: 0, y: 0, z: -0.0037999998}
 --- !u!114 &17584485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,8 +704,8 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0002}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0001}
-  _size: {x: 160, y: 30, z: 0.01}
+  _center: {x: 0, y: 0, z: -0.0037999998}
+  _size: {x: 160, y: 30, z: 0.02}
   _collider: {fileID: 17584484}
   _rectTransform: {fileID: 17584481}
   _graphic: {fileID: 17584489}
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 17584488}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -771,7 +771,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.11372549, g: 0.78431374, b: 0.972549, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -823,8 +823,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: af7a5b9a714248e4fa6baa86bbc094b6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4471d2cd89f95cf4db3c8f34cf43f119, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -977,8 +977,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1508,6 +1509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VivePointers
       objectReference: {fileID: 0}
+    - target: {fileID: 152968, guid: 12ee41758a687f54e98120e486ccd16e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 450334, guid: 12ee41758a687f54e98120e486ccd16e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1827,10 +1832,10 @@ RectTransform:
   m_Father: {fileID: 169870374}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -50}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140049991
 MonoBehaviour:
@@ -1852,7 +1857,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_NormalColor: {r: 1, g: 0.6462264, b: 0.6462264, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1899,13 +1904,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 9cfef7cd10dac73469d518cda07a70d1, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.39607847, g: 0.39607847, b: 0.39607847, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: af7a5b9a714248e4fa6baa86bbc094b6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2161,8 +2166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 140049991}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  textColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
+  textColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 621900237}
   selectAudio: {fileID: 140049997}
@@ -2181,7 +2186,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 300, y: 100, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0001}
+  m_Center: {x: 0, y: 0, z: -0.0004}
 --- !u!114 &140050000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,7 +2202,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0002}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0001}
+  _center: {x: 0, y: 0, z: -0.0004}
   _size: {x: 300, y: 100, z: 0.01}
   _collider: {fileID: 140049999}
   _rectTransform: {fileID: 140049990}
@@ -2329,9 +2334,9 @@ RectTransform:
   - {fileID: 1069660322}
   - {fileID: 1225925070}
   - {fileID: 1658867478}
+  - {fileID: 1566062303}
   - {fileID: 1255872182}
   - {fileID: 300419313}
-  - {fileID: 1566062303}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3167,7 +3172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 276690524}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -3187,7 +3192,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0027}
+  m_Center: {x: 0, y: 0, z: -0.003}
 --- !u!114 &276690523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,7 +3208,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0027}
+  _center: {x: 0, y: 0, z: -0.003}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 276690522}
   _rectTransform: {fileID: 276690520}
@@ -3228,7 +3233,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3280,7 +3285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3534,7 +3539,7 @@ RectTransform:
   m_Children:
   - {fileID: 1681309335}
   m_Father: {fileID: 153010395}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3745,7 +3750,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 200, y: 80, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0001}
+  m_Center: {x: 0, y: 0, z: -0.0021}
 --- !u!114 &300419317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3761,7 +3766,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0002}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0001}
+  _center: {x: 0, y: 0, z: -0.0021}
   _size: {x: 200, y: 80, z: 0.01}
   _collider: {fileID: 300419316}
   _rectTransform: {fileID: 300419313}
@@ -3779,7 +3784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 300419320}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -4304,15 +4309,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lower
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5490,7 +5496,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.114587024, g: 0.7850772, b: 0.9716981, a: 1}
     m_HighlightedColor: {r: 0.1137255, g: 0.7843138, b: 0.9725491, a: 0.4117647}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5762,7 +5768,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 200, y: 80, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0004}
+  m_Center: {x: 0, y: 0, z: -0.0001}
 --- !u!114 &515919957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5778,7 +5784,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0002}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0004}
+  _center: {x: 0, y: 0, z: -0.0001}
   _size: {x: 200, y: 80, z: 0.01}
   _collider: {fileID: 515919956}
   _rectTransform: {fileID: 515919950}
@@ -5796,7 +5802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 515919951}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.32224423, b: 0.41509432, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -5919,7 +5925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &521384184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6403,7 +6409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4471d2cd89f95cf4db3c8f34cf43f119, type: 3}
     m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
@@ -7027,7 +7033,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8132a1206972c234f926769c3fcbb619, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
@@ -7215,7 +7221,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7499,7 +7505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 670125840}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -7519,7 +7525,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 450, y: 270, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.00039999996}
+  m_Center: {x: 0, y: 0, z: -0.0011}
 --- !u!114 &670125847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7535,7 +7541,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.00049999997}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.00039999996}
+  _center: {x: 0, y: 0, z: -0.0011}
   _size: {x: 450, y: 270, z: 0.01}
   _collider: {fileID: 670125846}
   _rectTransform: {fileID: 670125839}
@@ -8212,15 +8218,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Higher
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8854,7 +8861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 860090467}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -8874,7 +8881,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0012}
+  m_Center: {x: 0, y: 0, z: -0.0027}
 --- !u!114 &860090466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8890,7 +8897,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0012}
+  _center: {x: 0, y: 0, z: -0.0027}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 860090465}
   _rectTransform: {fileID: 860090461}
@@ -8967,7 +8974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9054,7 +9061,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -9338,7 +9345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 892804782}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -9563,15 +9570,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Higher
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10380,10 +10388,10 @@ RectTransform:
   m_Father: {fileID: 169870374}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -151}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101515078
 MonoBehaviour:
@@ -10714,8 +10722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 1101515080}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  textColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
+  textColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 1369775264}
   selectAudio: {fileID: 1101515084}
@@ -10734,7 +10742,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 300, y: 100, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.00049999997}
+  m_Center: {x: 0, y: 0, z: -0.0009999999}
 --- !u!114 &1101515087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10750,7 +10758,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.00059999997}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.00049999997}
+  _center: {x: 0, y: 0, z: -0.0009999999}
   _size: {x: 300, y: 100, z: 0.01}
   _collider: {fileID: 1101515086}
   _rectTransform: {fileID: 1101515077}
@@ -10770,7 +10778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1102797355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10967,15 +10975,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lower
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11189,15 +11198,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lower
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11487,10 +11497,10 @@ MonoBehaviour:
   nextPanel: {fileID: 1786790829}
   sliderObject: {fileID: 1933029069}
   trackNames:
-  - TRACK_01
-  - TRACK_02
+  - Healing
+  - Deep
   messageBeginning: 'Track Selected: '
-  messageNoneSelected: You have not selected any track.
+  messageNoneSelected: 'Track Selected: None'
 --- !u!1 &1244754900
 GameObject:
   m_ObjectHideFlags: 0
@@ -11639,7 +11649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1255872182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11653,11 +11663,11 @@ RectTransform:
   m_Children:
   - {fileID: 276690520}
   m_Father: {fileID: 153010395}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -216.6, y: -166}
+  m_AnchoredPosition: {x: -400.9, y: -208.2}
   m_SizeDelta: {x: -920, y: -520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255872183
@@ -12287,6 +12297,75 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &1321162997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452432275, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279360886452720367, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraSet w Tracked
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9962d63bd2ece924ea99e71f135a094c, type: 3}
 --- !u!1 &1323566912
 GameObject:
   m_ObjectHideFlags: 0
@@ -12677,7 +12756,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4471d2cd89f95cf4db3c8f34cf43f119, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
@@ -14229,7 +14308,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0.79697967, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14287,7 +14366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1566062303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14301,11 +14380,11 @@ RectTransform:
   m_Children:
   - {fileID: 2041698321}
   m_Father: {fileID: 153010395}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 206, y: -166}
+  m_AnchoredPosition: {x: -39.6, y: -206.9}
   m_SizeDelta: {x: -920, y: -520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566062304
@@ -14729,6 +14808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b08f01e296f4942ae191686cc758b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   unselectedWarning: {fileID: 372650925}
   envPanel: {fileID: 303470823}
   nextPanel: {fileID: 153010389}
@@ -15516,7 +15596,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -15739,12 +15819,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_Font: {fileID: 12800000, guid: 8132a1206972c234f926769c3fcbb619, type: 3}
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 65
+    m_MaxSize: 80
     m_Alignment: 1
     m_AlignByGeometry: 1
     m_RichText: 1
@@ -16035,7 +16115,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4471d2cd89f95cf4db3c8f34cf43f119, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
@@ -16782,7 +16862,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -17099,7 +17179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 1835246465}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -17139,8 +17219,8 @@ RectTransform:
   m_Father: {fileID: 1586926653}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.79697967, y: 0}
+  m_AnchorMax: {x: 0.79697967, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17721,7 +17801,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1289, y: 784}
+  m_SizeDelta: {x: 1250, y: 770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904687104
 MonoBehaviour:
@@ -18525,7 +18605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 1939828178}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -18545,7 +18625,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0012}
+  m_Center: {x: 0, y: 0, z: -0.0025}
 --- !u!114 &1939828177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18561,7 +18641,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0012}
+  _center: {x: 0, y: 0, z: -0.0025}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 1939828176}
   _rectTransform: {fileID: 1939828172}
@@ -18638,7 +18718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19065,15 +19145,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Higher
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -19220,8 +19301,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19298,7 +19380,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -19359,10 +19441,10 @@ RectTransform:
   m_Father: {fileID: 169870374}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -252}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036268905
 MonoBehaviour:
@@ -19511,7 +19593,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 300, y: 100, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0007}
+  m_Center: {x: 0, y: 0, z: -0.0014}
 --- !u!114 &2036268911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19527,7 +19609,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0008}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0007}
+  _center: {x: 0, y: 0, z: -0.0014}
   _size: {x: 300, y: 100, z: 0.01}
   _collider: {fileID: 2036268910}
   _rectTransform: {fileID: 2036268904}
@@ -19545,8 +19627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2036268907}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  textColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
+  textColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 1755910418}
   selectAudio: {fileID: 2036268914}
@@ -19994,7 +20076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2041698327}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -20014,7 +20096,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0012}
+  m_Center: {x: 0, y: 0, z: -0.0028}
 --- !u!114 &2041698326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20030,7 +20112,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0012}
+  _center: {x: 0, y: 0, z: -0.0028}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 2041698325}
   _rectTransform: {fileID: 2041698321}
@@ -20055,7 +20137,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -20107,7 +20189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20647,7 +20729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2082698616}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -20667,7 +20749,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0012}
+  m_Center: {x: 0, y: 0, z: -0.0022999998}
 --- !u!114 &2082698615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20683,7 +20765,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0012}
+  _center: {x: 0, y: 0, z: -0.0022999998}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 2082698614}
   _rectTransform: {fileID: 2082698610}
@@ -20760,7 +20842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21087,7 +21169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2102254464}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -21107,7 +21189,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 50, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0012}
+  m_Center: {x: 0, y: 0, z: -0.0029}
 --- !u!114 &2102254463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21123,7 +21205,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0013}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0012}
+  _center: {x: 0, y: 0, z: -0.0029}
   _size: {x: 60, y: 50, z: 0.01}
   _collider: {fileID: 2102254462}
   _rectTransform: {fileID: 2102254458}
@@ -21200,7 +21282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b8aaa707027cc4f79af3439c5dbc9652, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21228,6 +21310,10 @@ PrefabInstance:
     - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_Name
       value: ViveCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21378,7 +21464,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -21626,7 +21712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2126910490}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0.050980393, g: 0.7058824, b: 0.972549, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -21646,7 +21732,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 450, y: 270, z: 0.01}
-  m_Center: {x: 0, y: 0, z: -0.0001}
+  m_Center: {x: 0, y: 0, z: -0.0004}
 --- !u!114 &2126910495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21662,7 +21748,7 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: -0.0002}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: -0.0001}
+  _center: {x: 0, y: 0, z: -0.0004}
   _size: {x: 450, y: 270, z: 0.01}
   _collider: {fileID: 2126910494}
   _rectTransform: {fileID: 2126910487}
@@ -21950,7 +22036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2135447820}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -22104,7 +22190,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1259, y: 788}
+  m_SizeDelta: {x: 1250, y: 770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2136143091
 MonoBehaviour:
@@ -22195,7 +22281,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4471d2cd89f95cf4db3c8f34cf43f119, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
