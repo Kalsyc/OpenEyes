@@ -126,12 +126,16 @@ namespace Vive.Plugin.SR
                 0f, ViveSR_DualCameraImageCapture.OffsetHeadToCamera[1], ViveSR_DualCameraImageCapture.OffsetHeadToCamera[2]);
 
             //load to temp variable which will update variable in calibiration function
+            /*
             Vector3 _RelativeAngle = new Vector3(GetRegistryValue(keyNamePath, keyNameRelativeAngle + "_x", 0.0f),
                                             GetRegistryValue(keyNamePath, keyNameRelativeAngle + "_y", 0.0f),
                                             GetRegistryValue(keyNamePath, keyNameRelativeAngle + "_z", 0.0f));
             Vector3 _AbsoluteAngle = new Vector3(GetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_x", 0.0f),
                                         GetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_y", 0.0f),
                                         GetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_z", 0.0f));
+            */
+            Vector3 _RelativeAngle = new Vector3(0f, 0f, 0f);
+            Vector3 _AbsoluteAngle = new Vector3(0f, 0f, 0f);
 
             CurrentCalibrationType = CalibrationType.RELATIVE;
             Calibration(CalibrationAxis.X, _RelativeAngle.x);
@@ -147,8 +151,11 @@ namespace Vive.Plugin.SR
         /// <summary>
         /// Save the custom calibration parameters. 
         /// </summary>
+        
+            
         public void SaveDeviceParameter()
         {
+            /*
             SetRegistryValue(keyNamePath, keyNameRelativeAngle + "_x", RelativeAngle.x);
             SetRegistryValue(keyNamePath, keyNameRelativeAngle + "_y", RelativeAngle.y);
             SetRegistryValue(keyNamePath, keyNameRelativeAngle + "_z", RelativeAngle.z);
@@ -156,7 +163,10 @@ namespace Vive.Plugin.SR
             SetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_x", AbsoluteAngle.x);
             SetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_y", AbsoluteAngle.y);
             SetRegistryValue(keyNamePath, keyNameAbsoluteAngle + "_z", AbsoluteAngle.z);
+            */
         }
+        
+        /*
         private void SetRegistryValue(string path, string sub_path, float value)
         {
             Registry.SetValue(path, sub_path, value.ToString(), RegistryValueKind.String);
@@ -169,5 +179,7 @@ namespace Vive.Plugin.SR
 
             return float.Parse(registry_object.ToString());
         }
+        */
+        
     }
 }

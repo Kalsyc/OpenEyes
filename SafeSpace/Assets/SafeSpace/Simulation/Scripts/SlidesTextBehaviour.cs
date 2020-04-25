@@ -13,6 +13,7 @@ public class SlidesTextBehaviour : MonoBehaviour
     public GameObject slideBackgroundObject;
     public GameObject reference;
     public UnityEvent endingEvent;
+    //public UnityEvent[] eventList;
 
     private Text slideTitle;
     private Text slideBody;
@@ -27,26 +28,29 @@ public class SlidesTextBehaviour : MonoBehaviour
         numOfSlides = Mathf.Min(title.Length, body.Length);
     }
 
-    public void changeSlide()
+    public void ChangeSlide()
     {
+        Debug.Log("Slide changed");
         if (currentSlide == numOfSlides)
         {
             reference.SetActive(false);
-            endingEvent.Invoke();
+            //endingEvent.Invoke();
             return;
         }
         Debug.Log("ChangeSlide");
         slideTitle.text = title[currentSlide];
         slideBody.text = body[currentSlide];
+        //eventList[currentSlide].Invoke();
         currentSlide++;
     }
 
+    /*
     void OnEnable()
     {
         EventMaster.OnSlides += changeSlide;
     }
 
-    /*
+    
 
     public void changeToSlide1() {
         currentSlide = 1;

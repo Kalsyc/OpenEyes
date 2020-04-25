@@ -12,12 +12,18 @@ public class GuidedBreathing : MonoBehaviour
     public string[] stringShown;
     // PlayGlowingCircle -> StopGlowingCircle -> Play CircleAnim
     public int glowingCircleStart;
-    public int glowingCircleEnd;
-    public int breathingCircleStart;
+    //public int glowingCircleEnd;
+    //public int breathingCircleStart;
+
+    public int circleStart;
+    public int textOff;
+    public int textOn;
 
     public GameObject textObject;
+    public GameObject breathingText;
     public GameObject glowingCircle;
     public GameObject breathingCircle;
+    public GameObject setCircle;
 
     private bool isPlaying = false;
 
@@ -27,9 +33,12 @@ public class GuidedBreathing : MonoBehaviour
     public void Start()
     {
         text = textObject.GetComponent<TMP_Text>();
+        holder.Add(circleStart, PlaySetCircle);
+        holder.Add(textOn, PlayBreathingText);
+        holder.Add(textOff, StopBreathingText);
         holder.Add(glowingCircleStart, PlayGlowingCircle);
-        holder.Add(glowingCircleEnd, StopGlowingCircle);
-        holder.Add(breathingCircleStart, PlayBreathingCircle);
+        //holder.Add(glowingCircleEnd, StopGlowingCircle);
+        //holder.Add(breathingCircleStart, PlayBreathingCircle);
     }
     public void PlayScript()
     {
@@ -38,6 +47,8 @@ public class GuidedBreathing : MonoBehaviour
             StopAllCoroutines();
             glowingCircle.SetActive(false);
             breathingCircle.SetActive(false);
+            breathingText.SetActive(true);
+            setCircle.SetActive(false);
         }
         StartCoroutine(PlayStep(stringShown));
     }
@@ -50,26 +61,40 @@ public class GuidedBreathing : MonoBehaviour
             text.text = msg[i];
             if (holder.ContainsKey(i))
             {
-                Debug.Log("Helpo");
                 holder[i].Invoke();
             }
             yield return new WaitForSeconds(stringDuration[i]);
         }
-        isPlaying = false;
+        //isPlaying = false;
     }
 
-    public void PlayBreathingCircle()
+    private void PlaySetCircle()
+    {
+        setCircle.SetActive(true);
+    }
+
+    private void PlayBreathingText()
+    {
+        breathingText.SetActive(true);
+    }
+
+    private void StopBreathingText()
+    {
+        breathingText.SetActive(false);
+    }    
+
+    private void PlayBreathingCircle()
     {
         breathingCircle.SetActive(true);
     }    
 
 
-    public void PlayGlowingCircle()
+    private void PlayGlowingCircle()
     {
         glowingCircle.SetActive(true);
     }
 
-    public void StopGlowingCircle()
+    private void StopGlowingCircle()
     {
         glowingCircle.SetActive(false);
     }

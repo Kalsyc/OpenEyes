@@ -8,11 +8,20 @@ public class EventMaster : MonoBehaviour
     public delegate void TriggerAction();
     public static event TriggerAction OnDocument;
     public static event TriggerAction OnCalendar;
-    public static event TriggerAction OnSlides;
+    public static event TriggerAction OnSlideOne;
+    public static event TriggerAction OnSlideTwo;
+    public static event TriggerAction OnSlideThree;
     public static event TriggerAction OnSlideEnd;
     public static event TriggerAction OnBoot;
+    public static event TriggerAction OnSimBoot;
+    public static event TriggerAction OnDialogue;
 
     // Start is called before the first frame update
+
+    public void InvokeOnSimBoot()
+    {
+        OnSimBoot();
+    }
 
     public void InvokeOnBoot()
     {
@@ -24,9 +33,17 @@ public class EventMaster : MonoBehaviour
         OnCalendar();
     }
 
-    public void InvokeOnSlides()
+    public void InvokeOnSlideOne()
     {
-        OnSlides();
+        OnSlideOne();
+    }
+    public void InvokeOnSlideTwo()
+    {
+        OnSlideTwo();
+    }
+    public void InvokeOnSlideThree()
+    {
+        OnSlideThree();
     }
 
     public void InvokeOnSlideEnd()

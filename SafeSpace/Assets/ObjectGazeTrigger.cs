@@ -19,6 +19,7 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
     public GameObject cursor;
     public bool toRepeat = false;
     public bool isHighlightable;
+    public int limit;
 
     private bool inFocus = false;
     private bool isPlaying = false;
@@ -26,6 +27,7 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
     private Material[] originalMaterial;
     private int numOfMaterial;
     private Material[] highlightedMat;
+    private int count = 0;
 
     //Controller to set for trigger
     [Serializable]
@@ -33,6 +35,10 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
     {
         public HTC.UnityPlugin.Vive.HandRole controller;
     }
+
+
+    public ControllerSelector controllerToSet = new ControllerSelector();
+
 
     private void Start()
     {
@@ -49,8 +55,6 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
         StartCoroutine(Pickup());
 
     }
-
-    public ControllerSelector controllerToSet = new ControllerSelector();
 
     public void GazeFocusChanged(bool hasFocus)
     {
@@ -85,16 +89,16 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
         {
             yield return null;
         }
+
         isPlaying = true;
         cursor.SetActive(false);
         clickAudio.Play(0);
-        foreach (UnityEvent eventInstance in eventList)
-        {
-            eventInstance.Invoke();
-            yield return new WaitForSeconds(eventDelay);
-        }
-        yield return new WaitForSeconds(concurrentDelay);
-        if (toRepeat)
+        UnityEvent events = eventList[count];
+        events.Invoke();
+        count++;
+        yield return new WaitForSeconds(eventDelay);
+        //yield return new WaitForSeconds(concurrentDelay);
+        if (toRepeat || count < limit)
         {
             isPlaying = false;
             StartCoroutine(Pickup());

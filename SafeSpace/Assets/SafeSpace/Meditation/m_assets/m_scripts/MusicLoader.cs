@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MusicLoader : MonoBehaviour
 {
@@ -18,13 +19,13 @@ public class MusicLoader : MonoBehaviour
 
     private bool selected = false;
     private int selectedMusic;
-    private Text messageShown;
+    private TMP_Text messageShown;
     private Slider slider;
 
     public void Start()
     {
         slider = sliderObject.GetComponent<Slider>();
-        messageShown = selectMessage.GetComponent<Text>();
+        messageShown = selectMessage.GetComponent<TMP_Text>();
         messageShown.text = messageNoneSelected;
     }
 

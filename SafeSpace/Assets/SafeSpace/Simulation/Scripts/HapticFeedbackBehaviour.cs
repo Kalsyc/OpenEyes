@@ -37,8 +37,8 @@ public class HapticFeedbackBehaviour : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Vibration Triggered");
             ViveInput.TriggerHapticVibration(HandRole.LeftHand, durationLevels[count], frequencyLevels[count], amplitudeLevels[count], 0f);
+            ViveInput.TriggerHapticVibration(HandRole.RightHand, durationLevels[count], frequencyLevels[count], amplitudeLevels[count], 0f);
             yield return new WaitForSeconds(intervals[count]);
         }
     }

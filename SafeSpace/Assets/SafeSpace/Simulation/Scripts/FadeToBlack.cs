@@ -15,7 +15,7 @@ public class FadeToBlack : MonoBehaviour
 
     public void FadeToMeditation()
     {
-        FadeTo((int)SceneIndexes.MEDITATION_MENU);
+        FadeTo((int)SceneIndexes.SIMULATION_END_SCREEN);
     }
 
     public void FadeTo(int levelIndex) 

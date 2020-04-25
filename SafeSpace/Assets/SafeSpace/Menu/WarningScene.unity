@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00020647}
+  m_AnchoredPosition: {x: 0, y: -4.8}
   m_SizeDelta: {x: 167.37, y: 36.208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130897068
@@ -176,11 +176,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Please gaze your eyes over to 'Start' and hit trigger on your controller
-    to start SafeSpace.
+  m_text: 'Please gaze your eyes over to ''Start'' and hit trigger on your right
+    controller to start SafeSpace when the button turns darker.
+
+    For a full experience,
+    strap the left controller onto your left arm.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -205,8 +209,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -246,12 +250,12 @@ MonoBehaviour:
   m_margin: {x: -1.558924, y: 0.000011437926, z: -0.000037437883, w: 0}
   m_textInfo:
     textComponent: {fileID: 130897068}
-    characterCount: 92
+    characterCount: 196
     spriteCount: 0
-    spaceCount: 15
-    wordCount: 16
+    spaceCount: 33
+    wordCount: 34
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -519,15 +523,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -674,15 +679,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -963,8 +969,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'WARNING:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c3a4e1cb14b4854186f3ca012beb517, type: 2}
+  m_sharedMaterial: {fileID: 8543742529866694838, guid: 4c3a4e1cb14b4854186f3ca012beb517,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1303,7 +1310,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1.26}
-  m_SizeDelta: {x: 164.37, y: 34.52}
+  m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277151849
 MonoBehaviour:
@@ -1326,8 +1333,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.8018868, g: 0.767485, b: 0, a: 1}
-    m_PressedColor: {r: 1, g: 0, b: 0.17776918, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.5686275, g: 0, b: 0.17776918, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1372,13 +1379,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.11372549, g: 0.78431374, b: 0.972549, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: af7a5b9a714248e4fa6baa86bbc094b6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1600,8 +1607,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 1277151849}
-  HighlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
+  textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
+  textObject: {fileID: 0}
   selectAudio: {fileID: 1277151853}
   clickAudio: {fileID: 1277151852}
   controllerToSet:
@@ -1617,8 +1626,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 164.37, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0.00007}
+  m_Size: {x: 180, y: 60, z: 0.007}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1277151856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,8 +1643,8 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0.00007}
-  _size: {x: 164.37, y: 34.52, z: 0.007}
+  _center: {x: 0, y: 0, z: 0}
+  _size: {x: 180, y: 60, z: 0.007}
   _collider: {fileID: 1277151855}
   _rectTransform: {fileID: 1277151848}
   _graphic: {fileID: 1277151850}
@@ -1885,7 +1894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413775817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6337066, z: 3}
+  m_LocalPosition: {x: 0, y: 1.6337066, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 751928336}
@@ -2225,12 +2234,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: The simulations in this game are meant to emulate generalised anxiety in
-    Virtual Reality/Mixed Reality. Some people may experience discomfort, motion
-    sickness, nausea or an induced anxiety attack while viewing such content. If
-    you feel uncomfortable at any point in time, please remove your headset immediately.
+    Virtual Reality. Some people may experience discomfort, motion sickness, nausea
+    or an induced anxiety attack while viewing such content. If you feel uncomfortable
+    at any point in time, please remove your headset immediately.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd9cfab169c653f4586f91a3d408a62d, type: 2}
+  m_sharedMaterial: {fileID: 4886009232258790762, guid: bd9cfab169c653f4586f91a3d408a62d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2255,8 +2265,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4.5
+  m_fontSizeBase: 4.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2296,10 +2306,10 @@ MonoBehaviour:
   m_margin: {x: -1.558924, y: 0.000011437926, z: -0.000037437883, w: 0}
   m_textInfo:
     textComponent: {fileID: 1659909950}
-    characterCount: 311
+    characterCount: 297
     spriteCount: 0
-    spaceCount: 45
-    wordCount: 47
+    spaceCount: 44
+    wordCount: 45
     linkCount: 0
     lineCount: 5
     pageCount: 1
@@ -2369,7 +2379,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1, y: 1.26}
-  m_SizeDelta: {x: 162.2, y: 34.52}
+  m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016088558
 MonoBehaviour:
@@ -2391,9 +2401,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.8018868, g: 0.767485, b: 0, a: 1}
-    m_PressedColor: {r: 1, g: 0, b: 0.17776918, a: 1}
+    m_NormalColor: {r: 0.11372549, g: 0.78431374, b: 0.972549, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2443,8 +2453,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: af7a5b9a714248e4fa6baa86bbc094b6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2472,8 +2482,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 162.2, y: 34.52, z: 0.007}
-  m_Center: {x: 0, y: 0, z: 0.00007}
+  m_Size: {x: 180, y: 60, z: 0.007}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2016088562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2489,8 +2499,8 @@ MonoBehaviour:
   _offset: {x: 0, y: 0, z: 0}
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
-  _center: {x: 0, y: 0, z: 0.00007}
-  _size: {x: 162.2, y: 34.52, z: 0.007}
+  _center: {x: 0, y: 0, z: 0}
+  _size: {x: 180, y: 60, z: 0.007}
   _collider: {fileID: 2016088561}
   _rectTransform: {fileID: 2016088557}
   _graphic: {fileID: 2016088559}
@@ -2603,8 +2613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 2016088558}
-  HighlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
+  textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
+  textObject: {fileID: 0}
   selectAudio: {fileID: 2016088565}
   clickAudio: {fileID: 2016088563}
   controllerToSet:

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class EnvironmentLoader : MonoBehaviour
 {
-    private Color selectColor = Color.red;
     private Color unselectColorFlower;
     private Color unselectColorGrass;
     private int currentLoadedEnvIndex = -1;
@@ -14,6 +13,7 @@ public class EnvironmentLoader : MonoBehaviour
     private int grassEnvIndex = (int)SceneIndexes.MEDITATION_GRASS;
     private bool isSelected = false;
 
+    public Color selectColor;
     public GameObject unselectedWarning;
     public GameObject envPanel;
     public GameObject nextPanel;
