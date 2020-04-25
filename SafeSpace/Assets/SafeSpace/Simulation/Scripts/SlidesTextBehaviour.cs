@@ -28,13 +28,13 @@ public class SlidesTextBehaviour : MonoBehaviour
         numOfSlides = Mathf.Min(title.Length, body.Length);
     }
 
-    public void changeSlide()
+    public void ChangeSlide()
     {
         Debug.Log("Slide changed");
         if (currentSlide == numOfSlides)
         {
             reference.SetActive(false);
-            endingEvent.Invoke();
+            //endingEvent.Invoke();
             return;
         }
         Debug.Log("ChangeSlide");

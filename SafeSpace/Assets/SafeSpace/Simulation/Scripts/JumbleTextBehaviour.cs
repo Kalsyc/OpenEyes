@@ -30,12 +30,13 @@ public class JumbleTextBehaviour : MonoBehaviour
         t = GetComponent<Text>();
     }
 
+
     public void fadeOut() {
-        LeanTween.alphaText(rt, 0f, 2f).setEase(LeanTweenType.linear).setOnComplete(changeText);
+        LeanTween.alphaText(rt, 0f, 0.6f).setEase(LeanTweenType.linear).setOnComplete(changeText);
     }
 
     public void fadeIn() {
-        LeanTween.alphaText(rt, 1f, 2f).setEase(LeanTweenType.linear);
+        LeanTween.alphaText(rt, 1f, 0.6f).setEase(LeanTweenType.linear);
     }
 
     public void changeText() {

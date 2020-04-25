@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadSimulation()
     {
-        pointer.GetComponent<NextLevelPointer>().SetPointer(SceneIndexes.SIMULATION_ONE_SCREEN);
+        pointer.GetComponent<NextLevelPointer>().SetPointer(SceneIndexes.SIMULATION_START_SCREEN);
         pointer.GetComponent<NextLevelPointer>().SetCurrent(SceneIndexes.MENU_SCREEN);
         LoadLoadingScreen();
     }

@@ -12,6 +12,6 @@ public class BossController : MonoBehaviour
 
     public void SetTalkTwo(bool v)
     {
-        animator.SetBool("Sassy", v);
+        animator.SetBool("Sass", v);
     }
 }

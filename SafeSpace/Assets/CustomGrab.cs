@@ -101,6 +101,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         cursor.SetActive(false);
         isPlaying = true;
         clickAudio.Play(0);
+        SetParent();
         objectTransform.position = controllerTransform.position;
         objectTransform.rotation = rotationOffset;
         foreach (UnityEvent eventInstance in eventList)
@@ -108,10 +109,15 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
             eventInstance.Invoke();
         }
         yield return new WaitForSeconds(grabDuration);
-        objectTransform.position = originalPosition;
-        objectTransform.rotation = originalRotation;
+        //objectTransform.position = originalPosition;
+        //objectTransform.rotation = originalRotation;
         isPlaying = false;
-        StartCoroutine(Pickup());
+        //StartCoroutine(Pickup());
+    }
+
+    private void SetParent()
+    {
+        objectReference.transform.parent = controllerReference.transform;
     }
 
 
