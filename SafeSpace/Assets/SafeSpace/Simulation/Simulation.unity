@@ -2955,6 +2955,7 @@ GameObject:
   - component: {fileID: 1465507450}
   - component: {fileID: 1465507447}
   - component: {fileID: 1465507451}
+  - component: {fileID: 1465507452}
   m_Layer: 5
   m_Name: Slides
   m_TagString: Untagged
@@ -3245,6 +3246,7 @@ MonoBehaviour:
   concurrentDelay: 5
   cursor: {fileID: 1309548987}
   toRepeat: 1
+  isHighlightable: 0
   controllerToSet:
     controller: 0
 --- !u!23 &1465507451
@@ -3286,6 +3288,60 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1465507452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465507441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d92a6660cb6428a9a42b2984faf7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1465507446}
+        m_MethodName: changeSlide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1874233770}
+        m_MethodName: SetTalkOne
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1874233770}
+        m_MethodName: SetTalkOne
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delays:
+  - 0
+  - 5
+  eventType: Slides
 --- !u!1 &1497574206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,6 +3614,10 @@ PrefabInstance:
     - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_Name
       value: ViveCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 188906, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_IsActive
@@ -4522,6 +4582,148 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec625df986df4229aff00a67e84f31b, type: 3}
+--- !u!1001 &1874233767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8559388605018216608, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.058947008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8559388605018216608, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.007624574
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.12
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117854746013085912, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.017492723
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117854746013085912, guid: 9e1a616a6a9994c48807d436eb9e0286,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15316986
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e1a616a6a9994c48807d436eb9e0286, type: 3}
+--- !u!1 &1874233768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9e1a616a6a9994c48807d436eb9e0286,
+    type: 3}
+  m_PrefabInstance: {fileID: 1874233767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1874233769
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874233768}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 660c663d5b98c2b4892483a9465512c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1874233770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874233768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e19f8c9209acd49b1e9163ffe83c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1874233769}
 --- !u!1 &1911321450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,6 +5438,7 @@ MonoBehaviour:
   concurrentDelay: 3
   cursor: {fileID: 1683882819}
   toRepeat: 0
+  isHighlightable: 0
   controllerToSet:
     controller: 0
 --- !u!224 &1685344052593225

@@ -19,12 +19,14 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
     public float grabDuration;
     public GameObject cursor;
     public bool isHighlightable;
+    public Quaternion rotationOffset;
 
     private Transform objectTransform;
     private Transform controllerTransform;
     private bool inFocus = false;
     private bool isPlaying = false;
     private Vector3 originalPosition;
+    private Quaternion originalRotation;
     private MeshRenderer meshRenderer;
     private Material[] originalMaterial;
     private int numOfMaterial;
@@ -51,6 +53,7 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
             highlightedMat[numOfMaterial] = outlineMaterial;
             meshRenderer.materials = originalMaterial;
         }
+        originalRotation = objectReference.GetComponent<Transform>().rotation;
         objectTransform = objectReference.GetComponent<Transform>();
         controllerTransform = controllerReference.GetComponent<Transform>();
         originalPosition = objectReference.GetComponent<Transform>().position;
@@ -99,12 +102,14 @@ public class CustomGrab : MonoBehaviour, IGazeFocusable
         isPlaying = true;
         clickAudio.Play(0);
         objectTransform.position = controllerTransform.position;
+        objectTransform.rotation = rotationOffset;
         foreach (UnityEvent eventInstance in eventList)
         {
             eventInstance.Invoke();
         }
         yield return new WaitForSeconds(grabDuration);
         objectTransform.position = originalPosition;
+        objectTransform.rotation = originalRotation;
         isPlaying = false;
         StartCoroutine(Pickup());
     }

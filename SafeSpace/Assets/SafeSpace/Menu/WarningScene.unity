@@ -1310,7 +1310,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1.26}
-  m_SizeDelta: {x: 164.37, y: 34.52}
+  m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277151849
 MonoBehaviour:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonReference: {fileID: 1277151849}
-  highlightColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightColor: {r: 0, g: 0.3254902, b: 0.41568628, a: 1}
   textColor: {r: 1, g: 0, b: 0, a: 1}
   AnimationTime: 0.1
   textObject: {fileID: 0}
@@ -1626,7 +1626,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 164.37, y: 34.52, z: 0.007}
+  m_Size: {x: 180, y: 60, z: 0.007}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1277151856
 MonoBehaviour:
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
   _center: {x: 0, y: 0, z: 0}
-  _size: {x: 164.37, y: 34.52, z: 0.007}
+  _size: {x: 180, y: 60, z: 0.007}
   _collider: {fileID: 1277151855}
   _rectTransform: {fileID: 1277151848}
   _graphic: {fileID: 1277151850}
@@ -1894,7 +1894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413775817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6337066, z: 3}
+  m_LocalPosition: {x: 0, y: 1.6337066, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 751928336}
@@ -2379,7 +2379,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1, y: 1.26}
-  m_SizeDelta: {x: 162.2, y: 34.52}
+  m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016088558
 MonoBehaviour:
@@ -2482,7 +2482,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 162.2, y: 34.52, z: 0.007}
+  m_Size: {x: 180, y: 60, z: 0.007}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2016088562
 MonoBehaviour:
@@ -2500,7 +2500,7 @@ MonoBehaviour:
   _padding: {x: 0, y: 0, z: 0}
   _adjustToDepth: 1
   _center: {x: 0, y: 0, z: 0}
-  _size: {x: 162.2, y: 34.52, z: 0.007}
+  _size: {x: 180, y: 60, z: 0.007}
   _collider: {fileID: 2016088561}
   _rectTransform: {fileID: 2016088557}
   _graphic: {fileID: 2016088559}

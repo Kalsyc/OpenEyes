@@ -34,6 +34,10 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
         public HTC.UnityPlugin.Vive.HandRole controller;
     }
 
+
+    public ControllerSelector controllerToSet = new ControllerSelector();
+
+
     private void Start()
     {
         if (isHighlightable)
@@ -49,8 +53,6 @@ public class ObjectGazeTrigger : MonoBehaviour, IGazeFocusable
         StartCoroutine(Pickup());
 
     }
-
-    public ControllerSelector controllerToSet = new ControllerSelector();
 
     public void GazeFocusChanged(bool hasFocus)
     {

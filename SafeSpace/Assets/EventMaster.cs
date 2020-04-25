@@ -11,6 +11,7 @@ public class EventMaster : MonoBehaviour
     public static event TriggerAction OnSlides;
     public static event TriggerAction OnSlideEnd;
     public static event TriggerAction OnBoot;
+    public static event TriggerAction OnDialogue;
 
     // Start is called before the first frame update
 
