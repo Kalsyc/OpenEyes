@@ -2150,7 +2150,6 @@ GameObject:
   - component: {fileID: 1231634189}
   - component: {fileID: 1231634188}
   - component: {fileID: 1231634187}
-  - component: {fileID: 1231634186}
   m_Layer: 5
   m_Name: QuitScreen
   m_TagString: Untagged
@@ -2158,18 +2157,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1231634186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231634185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b6b8dee31755048b57baea862ceb83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1231634187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,6 +3168,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraSet w Tracked
       objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
+      objectReference: {fileID: 0}
     - target: {fileID: 8318257435528499387, guid: 9962d63bd2ece924ea99e71f135a094c,
         type: 3}
       propertyPath: EnableDepthMeshModule
@@ -4190,7 +4192,6 @@ GameObject:
   - component: {fileID: 452093526047650984}
   - component: {fileID: 452093526047650985}
   - component: {fileID: 452093526047650998}
-  - component: {fileID: 452093526047650999}
   m_Layer: 5
   m_Name: Menu_Panel
   m_TagString: Untagged
@@ -4211,18 +4212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
---- !u!114 &452093526047650999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452093526047650996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b6b8dee31755048b57baea862ceb83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &452093526180778688
 CanvasRenderer:
   m_ObjectHideFlags: 0

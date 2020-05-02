@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class particleScript : MonoBehaviour
+public class ParticleScript : MonoBehaviour
 {
     public Vector3 speed;
 

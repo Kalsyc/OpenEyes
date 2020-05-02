@@ -673,6 +673,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraSet w Tracked
       objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9962d63bd2ece924ea99e71f135a094c, type: 3}
 --- !u!1 &843793311

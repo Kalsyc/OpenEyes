@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521384190}
+      - m_Target: {fileID: 521384184}
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -1771,7 +1771,6 @@ GameObject:
   - component: {fileID: 153010393}
   - component: {fileID: 153010392}
   - component: {fileID: 153010391}
-  - component: {fileID: 153010390}
   m_Layer: 5
   m_Name: SelectMusic_Panel
   m_TagString: Untagged
@@ -1779,18 +1778,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &153010390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153010389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b6b8dee31755048b57baea862ceb83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &153010391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5000,7 +4987,6 @@ GameObject:
   - component: {fileID: 521384186}
   - component: {fileID: 521384185}
   - component: {fileID: 521384184}
-  - component: {fileID: 521384190}
   m_Layer: 5
   m_Name: PauseMenu_Panel
   m_TagString: Untagged
@@ -5017,9 +5003,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 521384183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b6b8dee31755048b57baea862ceb83, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb8361db205eb4aa934eee7a1fb574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 1102797354}
+  settingsPage: {fileID: 722135233}
 --- !u!114 &521384185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5113,20 +5101,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.3}
   m_SizeDelta: {x: 1000, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &521384190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521384183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb8361db205eb4aa934eee7a1fb574, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1102797354}
-  settingsPage: {fileID: 722135233}
 --- !u!1 &605136257
 GameObject:
   m_ObjectHideFlags: 0
@@ -7794,7 +7768,6 @@ GameObject:
   m_Component:
   - component: {fileID: 911182575}
   - component: {fileID: 911182574}
-  - component: {fileID: 911182576}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -7830,21 +7803,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &911182576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911182573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e679ae519fa95042982125c0f30f028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animController: {fileID: 0}
-  meditateObj: {fileID: 0}
-  HideObject: {fileID: 0}
 --- !u!1 &964040658
 GameObject:
   m_ObjectHideFlags: 0
@@ -8609,7 +8567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521384190}
+      - m_Target: {fileID: 521384184}
         m_MethodName: ToggleSettings
         m_Mode: 1
         m_Arguments:
@@ -10112,6 +10070,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraSet w Tracked
       objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9962d63bd2ece924ea99e71f135a094c, type: 3}
 --- !u!1 &1323566912
@@ -10465,7 +10438,6 @@ GameObject:
   - component: {fileID: 1405501713}
   - component: {fileID: 1405501712}
   - component: {fileID: 1405501711}
-  - component: {fileID: 1405501710}
   m_Layer: 5
   m_Name: Intro_Panel
   m_TagString: Untagged
@@ -10473,18 +10445,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1405501710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405501709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b6b8dee31755048b57baea862ceb83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1405501711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12792,7 +12752,6 @@ GameObject:
   - component: {fileID: 1786790833}
   - component: {fileID: 1786790832}
   - component: {fileID: 1786790831}
-  - component: {fileID: 1786790830}
   m_Layer: 5
   m_Name: SelectMode_Panel
   m_TagString: Untagged
@@ -12800,20 +12759,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1786790830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786790829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075010ac43743e14e998f03e6645abe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introPanel: {fileID: 1786790829}
-  nextPanel: {fileID: 0}
 --- !u!114 &1786790831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15095,23 +15040,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521384190}
+      - m_Target: {fileID: 521384184}
         m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

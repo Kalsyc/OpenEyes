@@ -15,20 +15,7 @@ public class ObjectLoader : MonoBehaviour
     {
         SceneManager.sceneUnloaded += OnUnloadMenu;
     }
-    /*
-    public void Update()
-    {
-        if (noObjectsFound)
-        {
-            objectsToLoad = GameObject.FindGameObjectWithTag("ToLoad");
-            if (objectsToLoad != null)
-            {
-                objectsToLoad.SetActive(true);
-                noObjectsFound = false;
-            }
-        }
-    }
-    */
+
     public void OnUnloadMenu(Scene scene)
     {
         if (objectsToLoad != null)
