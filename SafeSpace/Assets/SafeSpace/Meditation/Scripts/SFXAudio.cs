@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Controls sound effect audio
+/// </summary>
 public class SFXAudio : MonoBehaviour
 {
     public AudioClip[] audioClips;
@@ -9,7 +10,6 @@ public class SFXAudio : MonoBehaviour
     private bool selected = false;
     private int selectedAudio;
 
-    // Start is called before the first frame update
     void Start()
     {
         selectedGameAudio = gameObject.GetComponent<AudioSource>();
@@ -36,9 +36,4 @@ public class SFXAudio : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

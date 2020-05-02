@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Defines the events and its functions that will occur in simulator
+/// </summary>
 public class EventMaster : MonoBehaviour
 {
     

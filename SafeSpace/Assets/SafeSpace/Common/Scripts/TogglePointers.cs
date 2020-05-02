@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Tobii.G2OM;
+﻿using UnityEngine;
 using HTC.UnityPlugin.Vive;
 
+/// <summary>
+/// Pointers that toggle on or off to help with interacting with buttons.
+/// </summary>
 public class TogglePointers : MonoBehaviour
 {
     public GameObject reference;
@@ -11,6 +11,7 @@ public class TogglePointers : MonoBehaviour
 
     private void Update()
     {
+        // toggle when player presses directional pad up on either left or right controller
         if (ViveInput.GetPressDown(HandRole.LeftHand, ControllerButton.DPadUp) || ViveInput.GetPressDown(HandRole.RightHand, ControllerButton.DPadUp))
         {
             if (!pointersToggled)

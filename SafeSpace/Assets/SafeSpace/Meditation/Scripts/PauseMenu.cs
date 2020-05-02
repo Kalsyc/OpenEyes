@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using HTC.UnityPlugin.Vive;
 
+/// <summary>
+/// Handles interactions for the Pause Menu.
+/// </summary>
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -76,8 +76,6 @@ public class PauseMenu : MonoBehaviour
  
     public void LoadMenu()
     {
-        // for the main menu. collaborate with arthur later. (Menu) from build settings
-        //Time.timeScale = 1f;
         AudioListener.pause = false;
         inGame = false;
         SceneManager.LoadScene((int)SceneIndexes.MENU_SCREEN);

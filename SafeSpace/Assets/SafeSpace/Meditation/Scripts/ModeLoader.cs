@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handles interactions for the mode loader in meditation menu
+/// </summary>
 public class ModeLoader : MonoBehaviour
 {
     private int menuEnvIndex = (int)SceneIndexes.MEDITATION_MENU;

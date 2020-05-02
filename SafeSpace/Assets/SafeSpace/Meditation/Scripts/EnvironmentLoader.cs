@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Handles the environment screen in meditation menu
+/// </summary>
 public class EnvironmentLoader : MonoBehaviour
 {
     private Color unselectColorFlower;

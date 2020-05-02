@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Handles interactions for the intro screen in meditation menu
+/// </summary>
 public class IntroLoader : MonoBehaviour
 {
     public GameObject introPanel;

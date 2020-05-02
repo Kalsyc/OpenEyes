@@ -1,8 +1,10 @@
-﻿using Tobii.G2OM;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using HTC.UnityPlugin.Vive;
 
+/// <summary>
+/// Handles haptic feedback to user based on user input in unity editor
+/// </summary>
 public class HapticFeedbackBehaviour : MonoBehaviour
 {
     public float[] intervals;

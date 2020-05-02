@@ -3,10 +3,13 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using HTC.UnityPlugin.Vive;
-using UnityEngine.UI;
 using Tobii.G2OM;
 using UnityEngine.Events;
 
+/// <summary>
+/// Customised grab script that will teleport an interactable object to controller for a set amount of time.
+/// Also details out how item is to be highlighted
+/// </summary>
 public class CustomGrab : MonoBehaviour, IGazeFocusable
 {
 

@@ -1,15 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Loads the appropriate objects in meditation scene so they do not appear in menu
+/// </summary>
 public class ObjectLoader : MonoBehaviour
 {
     public GameObject objectsToLoad;
     public GameObject toInstantiate;
     public GameObject breathingSet;
     public GameObject meditationSet;
-    private bool noObjectsFound = false;
 
     public void Start()
     {
@@ -32,7 +32,7 @@ public class ObjectLoader : MonoBehaviour
             }
             else
             {
-                noObjectsFound = true;
+                throw new System.Exception("No objects to load");
             }
         }
         toInstantiate.SetActive(true);

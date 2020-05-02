@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Loads the objects. This is done because of a glitch or bug with Unity whereby GameObjects sometimes don't load properly when unloading async with TobiiXR and SRWorks
+/// </summary>
 public class EnableLoader : MonoBehaviour
 {
     private bool foundObject = false;

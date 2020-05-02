@@ -1,8 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Tobii.G2OM;
 
+/// <summary>
+/// Toggles text to be shown if user gazes on object tied to this script
+/// </summary>
 public class OnGazeShowText : MonoBehaviour, IGazeFocusable
 {
     public GameObject textToShow;

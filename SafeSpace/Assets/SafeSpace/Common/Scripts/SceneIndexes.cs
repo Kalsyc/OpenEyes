@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
-
-/*
- * Scene Indexes that references the build indexes.
- * Note: Choose Mode is not used.
- */
+﻿/// <summary>
+/// Ties build indexes to the scenes. Note that CHOSE_MODE_SCREEN is defunct.
+/// </summary>
 public enum SceneIndexes
 {
     CHOOSE_MODE_SCREEN = -1,

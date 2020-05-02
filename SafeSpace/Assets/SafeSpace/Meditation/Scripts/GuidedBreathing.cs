@@ -1,19 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Events;
 using System;
 
+/// <summary>
+/// Handles the script for guided breathing mode
+/// </summary>
 public class GuidedBreathing : MonoBehaviour
 {
     public int[] stringDuration;
     public string[] stringShown;
-    // PlayGlowingCircle -> StopGlowingCircle -> Play CircleAnim
     public int glowingCircleStart;
-    //public int glowingCircleEnd;
-    //public int breathingCircleStart;
 
     public int circleStart;
     public int textOff;
@@ -37,8 +35,6 @@ public class GuidedBreathing : MonoBehaviour
         holder.Add(textOn, PlayBreathingText);
         holder.Add(textOff, StopBreathingText);
         holder.Add(glowingCircleStart, PlayGlowingCircle);
-        //holder.Add(glowingCircleEnd, StopGlowingCircle);
-        //holder.Add(breathingCircleStart, PlayBreathingCircle);
     }
     public void PlayScript()
     {
@@ -65,7 +61,6 @@ public class GuidedBreathing : MonoBehaviour
             }
             yield return new WaitForSeconds(stringDuration[i]);
         }
-        //isPlaying = false;
     }
 
     private void PlaySetCircle()

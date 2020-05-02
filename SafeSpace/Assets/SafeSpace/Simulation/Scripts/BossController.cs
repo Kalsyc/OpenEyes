@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Script to handle animations for Boss
+/// </summary>
 public class BossController : MonoBehaviour
 {
     public Animator animator;

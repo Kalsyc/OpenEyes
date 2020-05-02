@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Loads Settings in the Pause Menu and handles the interactions
+/// </summary>
 public class SettingsLoader : MonoBehaviour
 {
     public GameObject settingsPanel;

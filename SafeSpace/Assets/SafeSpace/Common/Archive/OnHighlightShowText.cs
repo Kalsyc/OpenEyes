@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// 
+/// </summary>
 public class OnHighlightShowText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject textToShow;

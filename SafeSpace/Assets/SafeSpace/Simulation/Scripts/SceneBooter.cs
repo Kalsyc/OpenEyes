@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Invokes first event upon start of simulation
+/// </summary>
 public class SceneBooter : MonoBehaviour
 {
     // Start is called before the first frame update

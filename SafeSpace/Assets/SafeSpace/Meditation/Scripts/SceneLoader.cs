@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handles loading of scenes in meditation
+/// </summary>
 public class SceneLoader : MonoBehaviour
 {
     public void GoToGrass()

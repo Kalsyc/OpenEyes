@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handles interactions in warning screen
+/// </summary>
 public class WarningScreen : MonoBehaviour
 {
     public void GoToMenu()

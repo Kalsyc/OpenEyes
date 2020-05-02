@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Fades the scene to black
+/// </summary>
 public class FadeToBlack : MonoBehaviour
 {
     public Animator animator;

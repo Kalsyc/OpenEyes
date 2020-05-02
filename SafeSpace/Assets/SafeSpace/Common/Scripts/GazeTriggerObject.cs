@@ -7,27 +7,42 @@ using UnityEngine.UI;
 using Tobii.G2OM;
 using UnityEngine.Events;
 
+/// <summary>
+/// Enables object to be highlighted with a cursor/material to signify that it is interactable and handles the interaction should the user gaze on the object
+/// </summary>
 public class GazeTriggerObject : MonoBehaviour, IGazeFocusable
 {
 
     public GameObject objectReference;
+    public GameObject cursor;
+
+    //audio to be played when interacted
     public AudioSource clickAudio;
+
+    //material used to outline interactable object
     public Material outlineMaterial;
+
+    //events to be invoked
     public List<UnityEvent> eventList;
+
+    //delays
     public float eventDelay;
     public float concurrentDelay;
-    public GameObject cursor;
+
     public bool toRepeat = false;
     public bool isHighlightable;
+
     public int limit;
 
     private bool inFocus = false;
     private bool isPlaying = false;
+
+    private int numOfMaterial;
+    private int count = 0;
+
     private MeshRenderer meshRenderer;
     private Material[] originalMaterial;
-    private int numOfMaterial;
     private Material[] highlightedMat;
-    private int count = 0;
 
     //Controller to set for trigger
     [Serializable]
@@ -79,9 +94,6 @@ public class GazeTriggerObject : MonoBehaviour, IGazeFocusable
 
         }
     }
-    private void Update()
-    {
-    }
 
     IEnumerator Pickup()
     {
@@ -97,7 +109,8 @@ public class GazeTriggerObject : MonoBehaviour, IGazeFocusable
         events.Invoke();
         count++;
         yield return new WaitForSeconds(eventDelay);
-        //yield return new WaitForSeconds(concurrentDelay);
+
+        //if there are multiple events, repeat
         if (toRepeat || count < limit)
         {
             isPlaying = false;

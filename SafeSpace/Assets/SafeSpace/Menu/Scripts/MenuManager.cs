@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using Tobii.G2OM;
 using HTC.UnityPlugin.Vive;
 
+/// <summary>
+/// Handles interactions in main menu
+/// </summary>
 public class MenuManager : MonoBehaviour
 {
     public GameObject pointer;
@@ -54,6 +54,5 @@ public class MenuManager : MonoBehaviour
     private void LoadLoadingScreen()
     {
         SceneManager.LoadScene((int)SceneIndexes.LOADING_SCREEN);
-        //SceneManager.LoadSceneAsync((int)SceneIndexes.LOADING_SCREEN, LoadSceneMode.Additive);
     }
 }

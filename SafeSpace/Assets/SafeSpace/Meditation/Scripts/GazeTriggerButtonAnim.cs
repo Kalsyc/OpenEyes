@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using HTC.UnityPlugin.Vive;
 
+/// <summary>
+/// Handles animation + gaze trigger with button in meditation scenes to start the event sequences
+/// </summary>
 public class GazeTriggerButtonAnim : MonoBehaviour, IGazeFocusable
 {
     public AudioSource clickAudio;

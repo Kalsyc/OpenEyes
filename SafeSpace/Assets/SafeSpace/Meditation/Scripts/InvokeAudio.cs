@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Handles audio for guided breathing voiceover
+/// </summary>
 public class InvokeAudio : MonoBehaviour
 {
     private AudioSource audioSource;

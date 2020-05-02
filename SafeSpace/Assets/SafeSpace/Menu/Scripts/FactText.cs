@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Generates a random fact based on user input in unity editor
+/// </summary>
 public class FactText : MonoBehaviour
 {
     public TextMeshProUGUI factToDisplay;

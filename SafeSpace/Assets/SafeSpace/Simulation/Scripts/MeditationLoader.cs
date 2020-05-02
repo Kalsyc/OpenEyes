@@ -1,8 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Loads the simulator onto the meditation screen
+/// </summary>
 public class MeditationLoader : MonoBehaviour
 {
     public float delay;

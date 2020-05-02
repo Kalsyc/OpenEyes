@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Determines the next scene to load for loading screen
+/// </summary>
 public class NextLevelPointer : MonoBehaviour
 {
     private SceneIndexes pointer;

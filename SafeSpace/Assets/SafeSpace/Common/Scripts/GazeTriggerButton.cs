@@ -5,7 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using HTC.UnityPlugin.Vive;
 
-//Monobehaviour which implements the "IGazeFocusable" interface, meaning it will be called on when the object receives focus
+/// <summary>
+/// Monobehaviour which implements the "IGazeFocusable" interface, meaning it will be called on when the object 
+/// receives focus and invokes events when the user interacts with the button.
+/// </summary>
 public class GazeTriggerButton : MonoBehaviour, IGazeFocusable
 {
     //Reference to button being invoked

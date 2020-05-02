@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Handles interactions for music screen in meditation menu.
+/// </summary>
 public class MusicLoader : MonoBehaviour
 {
     public GameObject selectMessage;
