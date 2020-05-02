@@ -3075,7 +3075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxOne: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
-  skyboxTwo: {fileID: 0}
 --- !u!4 &911182575
 Transform:
   m_ObjectHideFlags: 0
@@ -3854,6 +3853,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9962d63bd2ece924ea99e71f135a094c, type: 3}

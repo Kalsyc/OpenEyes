@@ -1811,6 +1811,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraSet w Tracked
       objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[3].TypeName
+      value: Tobii.XR.MouseProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318222230550820996, guid: 9962d63bd2ece924ea99e71f135a094c,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9962d63bd2ece924ea99e71f135a094c, type: 3}
 --- !u!1 &603548851
@@ -5400,6 +5420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectReference: {fileID: 1465507441}
+  cursor: {fileID: 1309548987}
   clickAudio: {fileID: 1465507447}
   outlineMaterial: {fileID: 2100000, guid: e8cb2f8bcdffc2e439306b2e9af5fdae, type: 2}
   eventList:
@@ -5457,7 +5478,6 @@ MonoBehaviour:
         m_CallState: 2
   eventDelay: 1
   concurrentDelay: 1
-  cursor: {fileID: 1309548987}
   toRepeat: 1
   isHighlightable: 0
   limit: 3
@@ -8896,6 +8916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectReference: {fileID: 1685344052593219}
+  cursor: {fileID: 1683882819}
   clickAudio: {fileID: 1685344052593221}
   outlineMaterial: {fileID: 2100000, guid: e8cb2f8bcdffc2e439306b2e9af5fdae, type: 2}
   eventList:
@@ -8914,7 +8935,6 @@ MonoBehaviour:
         m_CallState: 2
   eventDelay: 1
   concurrentDelay: 3
-  cursor: {fileID: 1683882819}
   toRepeat: 0
   isHighlightable: 0
   limit: 0
