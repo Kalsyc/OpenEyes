@@ -22,6 +22,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevel()
     {
+        Destroy(pointer);
         SceneManager.LoadScene(toLoad);
     }
 

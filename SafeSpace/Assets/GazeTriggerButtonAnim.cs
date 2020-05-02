@@ -36,7 +36,7 @@ public class GazeTriggerButtonAnim : MonoBehaviour, IGazeFocusable
         }
     }
 
-    IEnumerator PlayAnimation()
+    public IEnumerator PlayAnimation()
     {
         transform.Translate(new Vector3(0.0f, -0.1f));
         yield return new WaitForSeconds(1f);

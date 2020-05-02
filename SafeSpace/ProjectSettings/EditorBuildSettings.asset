@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/SafeSpace/Menu/ChooseMode.unity
+    guid: fd61e02cb5a02ff449c4d44b243c0f86
   - enabled: 1
     path: Assets/SafeSpace/Menu/WarningScene.unity
     guid: 6044a25fc956f2d4690159b21ba0bd3d

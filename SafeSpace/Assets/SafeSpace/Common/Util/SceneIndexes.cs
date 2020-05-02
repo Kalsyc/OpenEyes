@@ -3,9 +3,11 @@ using UnityEngine;
 
 /*
  * Scene Indexes that references the build indexes.
+ * Note: Choose Mode is not used.
  */
 public enum SceneIndexes
 {
+    CHOOSE_MODE_SCREEN = -1,
     WARNING_SCREEN = 0,
     MENU_SCREEN = 1,
     MEDITATION_MENU = 2,
