@@ -36,6 +36,19 @@ Alternatively, you can clone the project and open it with Unity (Version 2019.3.
 Download links: [TobiiXR](https://vr.tobii.com/sdk/downloads/), [SR_Works](https://developer.vive.com/resources/knowledgebase/vive-sranipal-sdk/)
 - If you have downloaded the runtimes and it still does not work, try restarting your computer or restarting SteamVR as sometimes, they may fail to initialize/load properly.
 - If you do not have a headset with eyetracking capabilities (HTC Vive), SafeSpace will assume that your eyes are always looking forward. Pointers have been added in v1.1 for Meditation Mode and Main Menu for users to interact with the UI, should the eye-tracking fail during gameplay. However, the animations, UI feedback and interactions in Simulator Mode are still not implemented with the pointers (to be updated in later versions).
+- If you are running the project via Unity, be sure to place the Scenes back in the build indexes according to SceneIndexes.cs
+- The BuildIndexes should be in this order:
+  + SafeSpace/Menu/WarningScene (index = 0)
+  + SafeSpace/Menu/Menu/MainMenu (index = 1)
+  + SafeSpace/Meditation/MeditationMenu (index = 2)
+  + SafeSpace/Meditation/FlowersEnv (index = 3)
+  + SafeSpace/Meditation/GrassEnv (index = 4)
+  + SafeSpace/Menu/LoadingScene (index = 5)
+  + SafeSpace/Simulation/StartingScreen (index = 6)
+  + SafeSpace/Simulation/SimulationBeforePresentation (index = 7)
+  + SafeSpace/Simulation/Simulation (index = 8)
+  + SafeSpace/Simulation/EndingScreen (index = 9)
+- After exporting the package, ensure that you accept all necessary changes specified by SteamVR, SRWorks, ViveInputUtility
 
 ## How to Play SafeSpace
 1. First, set up the eye callibration and ensure that you are seated upright. SafeSpace requires you to be seated for the whole duration of the experience.
