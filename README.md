@@ -44,10 +44,10 @@ Download links: [TobiiXR](https://vr.tobii.com/sdk/downloads/), [SR_Works](https
 4. Should you feel any discomfort during gameplay, take off the headset immediately.
 
 ### Controls
-Gaze: To select
-Right Controller Trigger: To interact/click
-Menu Button: Pause Menu
-D-pad Up: Toggle pointers on/off
+- Gaze: To select
+- Right Controller Trigger: To interact/click
+- Menu Button: Pause Menu
+- D-pad Up: Toggle pointers on/off
 
 ## Software/SDK/Assets/Audio used
 
