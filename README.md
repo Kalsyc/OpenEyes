@@ -49,6 +49,7 @@ Download links: [TobiiXR](https://vr.tobii.com/sdk/downloads/), [SR_Works](https
   + SafeSpace/Simulation/Simulation (index = 8)
   + SafeSpace/Simulation/EndingScreen (index = 9)
 - After exporting the package, ensure that you accept all necessary changes specified by SteamVR, SRWorks, ViveInputUtility
+- Ensure that 'Support Vive Pro Eye (Requires SRanpial SDK)' in TobiiXR Initializer found in the prefab 'CameraSet w Tracked' is checked
 
 ## How to Play SafeSpace
 1. First, set up the eye callibration and ensure that you are seated upright. SafeSpace requires you to be seated for the whole duration of the experience.
