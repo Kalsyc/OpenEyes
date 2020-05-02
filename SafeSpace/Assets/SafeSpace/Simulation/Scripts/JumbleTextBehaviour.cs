@@ -1,27 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using DentedPixel;
 
+/// <summary>
+/// Jumbles text
+/// </summary>
 public class JumbleTextBehaviour : MonoBehaviour
 {
     private string textToJumble;
     private string jumbledText;
     private RectTransform rt;
     private Text t;
-    // Start is called before the first frame update
 
-    // void OnEnable()
-    // {
-    //     EventManager.OnDocument += fadeOut;
-    // }
-
-    // void OnDisable()
-    // {
-    //     EventManager.OnDocument -= fadeOut;
-    // }
     void Start()
     {
         textToJumble = this.GetComponent<Text>().text;
@@ -42,7 +31,6 @@ public class JumbleTextBehaviour : MonoBehaviour
     public void changeText() {
         t.text = jumbledText;
         fadeIn();
-        // LeanTween.cancelAll();
     }
 
     string Shuffle(string str) {

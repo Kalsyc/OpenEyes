@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Handles events in a timed manner
+/// </summary>
 public class TimedBehaviour : MonoBehaviour
 {
     public List<UnityEvent> events;
