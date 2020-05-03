@@ -32,6 +32,7 @@ Alternatively, you can clone the project and open it with Unity (Version 2019.3.
 **Recommended for a fuller experience*
 
 ### Potential errors in running
+- If you are running via Unity, the starting scene is SafeSpace/Menu/WarningScene, the scenes are found under Menu, Meditation or Simulation folders in SafeSpace under Assets
 - Ensure that your firewall or any other application is not blocking SR_Runtime or TobiiXR Runtime from running. You may have to download the plugins/SDK/Runtime at the respective websites should the application not work with your machine.
 Download links: [TobiiXR](https://vr.tobii.com/sdk/downloads/), [SR_Works](https://developer.vive.com/resources/knowledgebase/vive-sranipal-sdk/)
 - If you have downloaded the runtimes and it still does not work, try restarting your computer or restarting SteamVR as sometimes, they may fail to initialize/load properly.
@@ -39,7 +40,7 @@ Download links: [TobiiXR](https://vr.tobii.com/sdk/downloads/), [SR_Works](https
 - If you are running the project via Unity, be sure to place the Scenes back in the build indexes according to SceneIndexes.cs
 - The BuildIndexes should be in this order:
   + SafeSpace/Menu/WarningScene (index = 0)
-  + SafeSpace/Menu/Menu/MainMenu (index = 1)
+  + SafeSpace/Menu/MainMenu (index = 1)
   + SafeSpace/Meditation/MeditationMenu (index = 2)
   + SafeSpace/Meditation/FlowersEnv (index = 3)
   + SafeSpace/Meditation/GrassEnv (index = 4)
