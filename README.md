@@ -6,6 +6,8 @@ This project is part of the module CS4240: Interaction Design for Virtual and Au
 You may view the project entry at iSTePS AY19/20 S2 [here](https://isteps.comp.nus.edu.sg/event/cs4240/module/AY2019-20+Semester_2+Task_1/project/7).
 Our promotional video which explains the features, challenges and gameplay of the simulator can also be found in this [link](https://www.youtube.com/watch?v=DXkq3lLcZkI&feature=youtu.be).
 
+Update: We've won 2nd place! Thanks to those that voted!
+
 Developed by Team SafeSpace.
 
 ## Problem Statement and Solution
